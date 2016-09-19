@@ -1,0 +1,1107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="LorealHairCareModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="AdminUsers">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Username" Type="nvarchar" MaxLength="512" Nullable="false" />
+          <Property Name="Password" Type="nvarchar" MaxLength="512" Nullable="false" />
+          <Property Name="FirstName" Type="nvarchar" MaxLength="512" Nullable="false" />
+          <Property Name="LastName" Type="nvarchar" MaxLength="512" Nullable="false" />
+          <Property Name="LastLoginDate" Type="datetime" />
+          <Property Name="CreateDate" Type="datetime" Nullable="false" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+          <Property Name="IsDeleted" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="AskExpert">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="SenderFullName" Type="nvarchar" MaxLength="1024" Nullable="false" />
+          <Property Name="SenderEmail" Type="nvarchar" MaxLength="512" Nullable="false" />
+          <Property Name="SenderPhone" Type="nvarchar" MaxLength="256" />
+          <Property Name="SenderIP" Type="nvarchar" MaxLength="12" Nullable="false" />
+          <Property Name="Question" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Answer" Type="nvarchar(max)" />
+          <Property Name="ViewDate" Type="nvarchar" MaxLength="1024" />
+          <Property Name="CreateDate" Type="smalldatetime" Nullable="false" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+          <Property Name="IsDeleted" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Categories">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ParentId" Type="int" Nullable="false" />
+          <Property Name="Title" Type="nvarchar" MaxLength="500" Nullable="false" />
+          <Property Name="Description" Type="nvarchar" MaxLength="1200" />
+          <Property Name="Image" Type="nvarchar" MaxLength="1024" />
+          <Property Name="Keywords" Type="nvarchar" MaxLength="500" />
+          <Property Name="UrlMapTitle" Type="nvarchar" MaxLength="512" />
+          <Property Name="ShowOrder" Type="int" Nullable="false" />
+          <Property Name="CreateDate" Type="smalldatetime" Nullable="false" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+          <Property Name="IsDeleted" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ContentCategories">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CategoryId" Type="int" Nullable="false" />
+          <Property Name="ContentId" Type="int" Nullable="false" />
+          <Property Name="CreateDate" Type="smalldatetime" Nullable="false" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+          <Property Name="IsDeleted" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ContentRelatedContents">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="RelatedContentId" Type="int" Nullable="false" />
+          <Property Name="ContentId" Type="int" Nullable="false" />
+          <Property Name="CreateDate" Type="smalldatetime" Nullable="false" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+          <Property Name="IsDeleted" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Contents">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Title" Type="nvarchar" MaxLength="500" Nullable="false" />
+          <Property Name="Image" Type="nvarchar" MaxLength="500" />
+          <Property Name="Header" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Detail" Type="ntext" />
+          <Property Name="ViewCount" Type="int" Nullable="false" />
+          <Property Name="Stars" Type="int" />
+          <Property Name="Tags" Type="nvarchar" MaxLength="1000" />
+          <Property Name="ShowOrder" Type="int" />
+          <Property Name="ViewDate" Type="varchar" MaxLength="120" />
+          <Property Name="CreateDate" Type="datetime" Nullable="false" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+          <Property Name="IsDeleted" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="FbNominees">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FbId" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="UserId" Type="int" />
+          <Property Name="Name" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="FirstName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="LastName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="UserName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Link" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="Gender" Type="nvarchar" MaxLength="6" />
+          <Property Name="Locale" Type="nvarchar" MaxLength="50" />
+          <Property Name="Birthday" Type="nvarchar" MaxLength="10" />
+          <Property Name="Email" Type="nvarchar" MaxLength="100" />
+          <Property Name="PictureUrl" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="CreateDate" Type="datetime" Nullable="false" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+          <Property Name="IsDeleted" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="IGPhotos">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="IGUserId" Type="bigint" Nullable="false" />
+          <Property Name="IGNomineeId" Type="bigint" Nullable="false" />
+          <Property Name="CaptionText" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="CommentCount" Type="int" Nullable="false" />
+          <Property Name="Created" Type="datetime" Nullable="false" />
+          <Property Name="Filter" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Link" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="LowResUrl" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="StandardResUrl" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="ThumbnailUrl" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+          <Property Name="IsDeleted" Type="bit" Nullable="false" />
+          <Property Name="CreateDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="IGUsers">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="InstaId" Type="bigint" Nullable="false" />
+          <Property Name="FullName" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="Bio" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="ProfilePicture" Type="nvarchar" MaxLength="500" Nullable="false" />
+          <Property Name="UserName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Website" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+          <Property Name="IsDeleted" Type="bit" Nullable="false" />
+          <Property Name="CreateDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="RelatedContents">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Title" Type="nvarchar" MaxLength="1024" Nullable="false" />
+          <Property Name="Detail" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Image" Type="nvarchar" MaxLength="1024" />
+          <Property Name="CreateDate" Type="smalldatetime" Nullable="false" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+          <Property Name="IsDeleted" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Users">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FbId" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="FirstName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="LastName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="UserName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Link" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="Gender" Type="nvarchar" MaxLength="6" />
+          <Property Name="Locale" Type="nvarchar" MaxLength="50" />
+          <Property Name="Birthday" Type="nvarchar" MaxLength="10" />
+          <Property Name="Email" Type="nvarchar" MaxLength="100" />
+          <Property Name="PictureUrl" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="CreateDate" Type="datetime" Nullable="false" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+          <Property Name="IsDeleted" Type="bit" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'LorealHairCare.dbo.FBCombinedPhotos' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="FBCombinedPhotos">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="Link" />
+            <PropertyRef Name="PictureUrl" />
+            <PropertyRef Name="SharerName" />
+            <PropertyRef Name="UserName" />
+            <PropertyRef Name="SharerProfilePic" />
+            <PropertyRef Name="NomineeName" />
+            <PropertyRef Name="NomineeProfilePic" />
+            <PropertyRef Name="CreateDate" />
+            <PropertyRef Name="IsActive" />
+            <PropertyRef Name="IsDeleted" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Link" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="PictureUrl" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="SharerName" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="UserName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="SharerProfilePic" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="NomineeName" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="NomineeProfilePic" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="CreateDate" Type="datetime" Nullable="false" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+          <Property Name="IsDeleted" Type="bit" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'LorealHairCare.dbo.IGCombinedPhotos' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="IGCombinedPhotos">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="Link" />
+            <PropertyRef Name="StandardResUrl" />
+            <PropertyRef Name="ThumbnailUrl" />
+            <PropertyRef Name="CaptionText" />
+            <PropertyRef Name="SharerName" />
+            <PropertyRef Name="SharerProfilePic" />
+            <PropertyRef Name="NomineeName" />
+            <PropertyRef Name="NomineeProfilePic" />
+            <PropertyRef Name="IsActive" />
+            <PropertyRef Name="IsDeleted" />
+            <PropertyRef Name="CreateDate" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Link" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="StandardResUrl" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="ThumbnailUrl" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="CaptionText" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="SharerName" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="SharerProfilePic" Type="nvarchar" MaxLength="500" Nullable="false" />
+          <Property Name="NomineeName" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="NomineeProfilePic" Type="nvarchar" MaxLength="500" Nullable="false" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+          <Property Name="IsDeleted" Type="bit" Nullable="false" />
+          <Property Name="CreateDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'LorealHairCare.dbo.vwContentWithCategories' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="vwContentWithCategories">
+          <Key>
+            <PropertyRef Name="CategoryId" />
+            <PropertyRef Name="ParentId" />
+            <PropertyRef Name="CategoryTitle" />
+            <PropertyRef Name="CategoryShowOrder" />
+            <PropertyRef Name="CategoryCreateDate" />
+          </Key>
+          <Property Name="CategoryId" Type="int" Nullable="false" />
+          <Property Name="ParentId" Type="int" Nullable="false" />
+          <Property Name="CategoryTitle" Type="nvarchar" MaxLength="500" Nullable="false" />
+          <Property Name="CategoryDescription" Type="nvarchar" MaxLength="1200" />
+          <Property Name="CategoryImage" Type="nvarchar" MaxLength="1024" />
+          <Property Name="CategoryKeywords" Type="nvarchar" MaxLength="500" />
+          <Property Name="CategoryShowOrder" Type="int" Nullable="false" />
+          <Property Name="CategoryCreateDate" Type="smalldatetime" Nullable="false" />
+          <Property Name="ContentId" Type="int" />
+          <Property Name="ContentTitle" Type="nvarchar" MaxLength="500" />
+          <Property Name="ContentImage" Type="nvarchar" MaxLength="500" />
+          <Property Name="ContentHeader" Type="nvarchar(max)" />
+          <Property Name="ContentStars" Type="int" />
+          <Property Name="ContentTags" Type="nvarchar" MaxLength="1000" />
+          <Property Name="ContentShowOrder" Type="int" />
+          <Property Name="ContentViewDate" Type="varchar" MaxLength="120" />
+          <Property Name="ContentViewCount" Type="int" />
+        </EntityType>
+        <Function Name="GetCategoryContentList" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="CategoryId" Type="int" Mode="In" />
+        </Function>
+        <Function Name="GetCombinedPhotoList" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="GetContentDetail" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ContentId" Type="int" Mode="In" />
+        </Function>
+        <Function Name="GetPopularContents" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ParentId" Type="int" Mode="In" />
+        </Function>
+        <Function Name="GetRecentContents" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <EntityContainer Name="LorealHairCareModelStoreContainer">
+          <EntitySet Name="AdminUsers" EntityType="Self.AdminUsers" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="AskExpert" EntityType="Self.AskExpert" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Categories" EntityType="Self.Categories" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ContentCategories" EntityType="Self.ContentCategories" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ContentRelatedContents" EntityType="Self.ContentRelatedContents" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Contents" EntityType="Self.Contents" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="FbNominees" EntityType="Self.FbNominees" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="IGPhotos" EntityType="Self.IGPhotos" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="IGUsers" EntityType="Self.IGUsers" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="RelatedContents" EntityType="Self.RelatedContents" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="FBCombinedPhotos" EntityType="Self.FBCombinedPhotos" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [FBCombinedPhotos].[Id] AS [Id], 
+    [FBCombinedPhotos].[Link] AS [Link], 
+    [FBCombinedPhotos].[PictureUrl] AS [PictureUrl], 
+    [FBCombinedPhotos].[SharerName] AS [SharerName], 
+    [FBCombinedPhotos].[UserName] AS [UserName], 
+    [FBCombinedPhotos].[SharerProfilePic] AS [SharerProfilePic], 
+    [FBCombinedPhotos].[NomineeName] AS [NomineeName], 
+    [FBCombinedPhotos].[NomineeProfilePic] AS [NomineeProfilePic], 
+    [FBCombinedPhotos].[CreateDate] AS [CreateDate], 
+    [FBCombinedPhotos].[IsActive] AS [IsActive], 
+    [FBCombinedPhotos].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[FBCombinedPhotos] AS [FBCombinedPhotos]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="IGCombinedPhotos" EntityType="Self.IGCombinedPhotos" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [IGCombinedPhotos].[Id] AS [Id], 
+    [IGCombinedPhotos].[Link] AS [Link], 
+    [IGCombinedPhotos].[StandardResUrl] AS [StandardResUrl], 
+    [IGCombinedPhotos].[ThumbnailUrl] AS [ThumbnailUrl], 
+    [IGCombinedPhotos].[CaptionText] AS [CaptionText], 
+    [IGCombinedPhotos].[SharerName] AS [SharerName], 
+    [IGCombinedPhotos].[SharerProfilePic] AS [SharerProfilePic], 
+    [IGCombinedPhotos].[NomineeName] AS [NomineeName], 
+    [IGCombinedPhotos].[NomineeProfilePic] AS [NomineeProfilePic], 
+    [IGCombinedPhotos].[IsActive] AS [IsActive], 
+    [IGCombinedPhotos].[IsDeleted] AS [IsDeleted], 
+    [IGCombinedPhotos].[CreateDate] AS [CreateDate]
+    FROM [dbo].[IGCombinedPhotos] AS [IGCombinedPhotos]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="vwContentWithCategories" EntityType="Self.vwContentWithCategories" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [vwContentWithCategories].[CategoryId] AS [CategoryId], 
+    [vwContentWithCategories].[ParentId] AS [ParentId], 
+    [vwContentWithCategories].[CategoryTitle] AS [CategoryTitle], 
+    [vwContentWithCategories].[CategoryDescription] AS [CategoryDescription], 
+    [vwContentWithCategories].[CategoryImage] AS [CategoryImage], 
+    [vwContentWithCategories].[CategoryKeywords] AS [CategoryKeywords], 
+    [vwContentWithCategories].[CategoryShowOrder] AS [CategoryShowOrder], 
+    [vwContentWithCategories].[CategoryCreateDate] AS [CategoryCreateDate], 
+    [vwContentWithCategories].[ContentId] AS [ContentId], 
+    [vwContentWithCategories].[ContentTitle] AS [ContentTitle], 
+    [vwContentWithCategories].[ContentImage] AS [ContentImage], 
+    [vwContentWithCategories].[ContentHeader] AS [ContentHeader], 
+    [vwContentWithCategories].[ContentStars] AS [ContentStars], 
+    [vwContentWithCategories].[ContentTags] AS [ContentTags], 
+    [vwContentWithCategories].[ContentShowOrder] AS [ContentShowOrder], 
+    [vwContentWithCategories].[ContentViewDate] AS [ContentViewDate], 
+    [vwContentWithCategories].[ContentViewCount] AS [ContentViewCount]
+    FROM [dbo].[vwContentWithCategories] AS [vwContentWithCategories]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="LorealHairCareModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="AdminUser">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Username" Type="String" MaxLength="512" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Password" Type="String" MaxLength="512" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="FirstName" Type="String" MaxLength="512" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="LastName" Type="String" MaxLength="512" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="LastLoginDate" Type="DateTime" Precision="3" />
+          <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+          <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="AskExpert">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SenderFullName" Type="String" MaxLength="1024" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="SenderEmail" Type="String" MaxLength="512" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="SenderPhone" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Name="SenderIP" Type="String" MaxLength="12" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Question" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Answer" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ViewDate" Type="String" MaxLength="1024" FixedLength="false" Unicode="true" />
+          <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+          <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Category">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ParentId" Type="Int32" Nullable="false" />
+          <Property Name="Title" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Description" Type="String" MaxLength="1200" FixedLength="false" Unicode="true" />
+          <Property Name="Image" Type="String" MaxLength="1024" FixedLength="false" Unicode="true" />
+          <Property Name="Keywords" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="UrlMapTitle" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+          <Property Name="ShowOrder" Type="Int32" Nullable="false" />
+          <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+          <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ContentCategory">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CategoryId" Type="Int32" Nullable="false" />
+          <Property Name="ContentId" Type="Int32" Nullable="false" />
+          <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+          <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ContentRelatedContent">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="RelatedContentId" Type="Int32" Nullable="false" />
+          <Property Name="ContentId" Type="Int32" Nullable="false" />
+          <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+          <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Content">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Image" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Header" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Detail" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ViewCount" Type="Int32" Nullable="false" />
+          <Property Name="Stars" Type="Int32" />
+          <Property Name="Tags" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="ShowOrder" Type="Int32" />
+          <Property Name="ViewDate" Type="String" MaxLength="120" FixedLength="false" Unicode="false" />
+          <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+          <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="FbNominee">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FbId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="UserId" Type="Int32" />
+          <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="FirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="LastName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Link" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Gender" Type="String" MaxLength="6" FixedLength="false" Unicode="true" />
+          <Property Name="Locale" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Birthday" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="PictureUrl" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+          <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="IGPhoto">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IGUserId" Type="Int64" Nullable="false" />
+          <Property Name="IGNomineeId" Type="Int64" Nullable="false" />
+          <Property Name="CaptionText" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CommentCount" Type="Int32" Nullable="false" />
+          <Property Name="Created" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Filter" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Link" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="LowResUrl" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="StandardResUrl" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ThumbnailUrl" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+          <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+          <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityType Name="IGUser">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="InstaId" Type="Int64" Nullable="false" />
+          <Property Name="FullName" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Bio" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ProfilePicture" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Website" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+          <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+          <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityType Name="RelatedContent">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" MaxLength="1024" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Detail" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Image" Type="String" MaxLength="1024" FixedLength="false" Unicode="true" />
+          <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+          <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FbId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="FirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="LastName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Link" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Gender" Type="String" MaxLength="6" FixedLength="false" Unicode="true" />
+          <Property Name="Locale" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Birthday" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="PictureUrl" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+          <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="FBCombinedPhoto">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="Link" />
+            <PropertyRef Name="PictureUrl" />
+            <PropertyRef Name="SharerName" />
+            <PropertyRef Name="UserName" />
+            <PropertyRef Name="SharerProfilePic" />
+            <PropertyRef Name="NomineeName" />
+            <PropertyRef Name="NomineeProfilePic" />
+            <PropertyRef Name="CreateDate" />
+            <PropertyRef Name="IsActive" />
+            <PropertyRef Name="IsDeleted" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Link" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="PictureUrl" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="SharerName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="SharerProfilePic" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="NomineeName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="NomineeProfilePic" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+          <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="IGCombinedPhoto">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="Link" />
+            <PropertyRef Name="StandardResUrl" />
+            <PropertyRef Name="ThumbnailUrl" />
+            <PropertyRef Name="CaptionText" />
+            <PropertyRef Name="SharerName" />
+            <PropertyRef Name="SharerProfilePic" />
+            <PropertyRef Name="NomineeName" />
+            <PropertyRef Name="NomineeProfilePic" />
+            <PropertyRef Name="IsActive" />
+            <PropertyRef Name="IsDeleted" />
+            <PropertyRef Name="CreateDate" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Link" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="StandardResUrl" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ThumbnailUrl" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CaptionText" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="SharerName" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="SharerProfilePic" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="NomineeName" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="NomineeProfilePic" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+          <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+          <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityType Name="vwContentWithCategory">
+          <Key>
+            <PropertyRef Name="CategoryId" />
+            <PropertyRef Name="ParentId" />
+            <PropertyRef Name="CategoryTitle" />
+            <PropertyRef Name="CategoryShowOrder" />
+            <PropertyRef Name="CategoryCreateDate" />
+          </Key>
+          <Property Name="CategoryId" Type="Int32" Nullable="false" />
+          <Property Name="ParentId" Type="Int32" Nullable="false" />
+          <Property Name="CategoryTitle" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CategoryDescription" Type="String" MaxLength="1200" FixedLength="false" Unicode="true" />
+          <Property Name="CategoryImage" Type="String" MaxLength="1024" FixedLength="false" Unicode="true" />
+          <Property Name="CategoryKeywords" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="CategoryShowOrder" Type="Int32" Nullable="false" />
+          <Property Name="CategoryCreateDate" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="ContentId" Type="Int32" />
+          <Property Name="ContentTitle" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="ContentImage" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="ContentHeader" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ContentStars" Type="Int32" />
+          <Property Name="ContentTags" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="ContentShowOrder" Type="Int32" />
+          <Property Name="ContentViewDate" Type="String" MaxLength="120" FixedLength="false" Unicode="false" />
+          <Property Name="ContentViewCount" Type="Int32" />
+        </EntityType>
+        <EntityContainer Name="LorealHairCareEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="AdminUsers" EntityType="Self.AdminUser" />
+          <EntitySet Name="AskExperts" EntityType="Self.AskExpert" />
+          <EntitySet Name="Categories" EntityType="Self.Category" />
+          <EntitySet Name="ContentCategories" EntityType="Self.ContentCategory" />
+          <EntitySet Name="ContentRelatedContents" EntityType="Self.ContentRelatedContent" />
+          <EntitySet Name="Contents" EntityType="Self.Content" />
+          <EntitySet Name="FbNominees" EntityType="Self.FbNominee" />
+          <EntitySet Name="IGPhotos" EntityType="Self.IGPhoto" />
+          <EntitySet Name="IGUsers" EntityType="Self.IGUser" />
+          <EntitySet Name="RelatedContents" EntityType="Self.RelatedContent" />
+          <EntitySet Name="Users" EntityType="Self.User" />
+          <EntitySet Name="FBCombinedPhotos" EntityType="Self.FBCombinedPhoto" />
+          <EntitySet Name="IGCombinedPhotos" EntityType="Self.IGCombinedPhoto" />
+          <EntitySet Name="vwContentWithCategories" EntityType="Self.vwContentWithCategory" />
+          <FunctionImport Name="GetCategoryContentList" ReturnType="Collection(LorealHairCareModel.GetCategoryContentList_Result)">
+            <Parameter Name="CategoryId" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="GetCombinedPhotoList" ReturnType="Collection(LorealHairCareModel.GetCombinedPhotoList_Result)" />
+          <FunctionImport Name="GetContentDetail" ReturnType="Collection(LorealHairCareModel.GetContentDetail_Result)">
+            <Parameter Name="ContentId" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="GetPopularContents" ReturnType="Collection(LorealHairCareModel.GetPopularContents_Result)">
+            <Parameter Name="ParentId" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="GetRecentContents" ReturnType="Collection(LorealHairCareModel.GetRecentContents_Result)" />
+        </EntityContainer>
+        <ComplexType Name="GetCategoryContentList_Result">
+          <Property Type="Int32" Name="CategoryId" Nullable="false" />
+          <Property Type="Int32" Name="ParentId" Nullable="false" />
+          <Property Type="String" Name="CategoryTitle" Nullable="false" MaxLength="500" />
+          <Property Type="String" Name="CategoryDescription" Nullable="true" MaxLength="1200" />
+          <Property Type="String" Name="CategoryImage" Nullable="true" MaxLength="1024" />
+          <Property Type="String" Name="CategoryKeywords" Nullable="true" MaxLength="500" />
+          <Property Type="Int32" Name="CategoryShowOrder" Nullable="false" />
+          <Property Type="DateTime" Name="CategoryCreateDate" Nullable="false" Precision="16" />
+          <Property Type="Int32" Name="ContentId" Nullable="true" />
+          <Property Type="String" Name="ContentTitle" Nullable="true" MaxLength="500" />
+          <Property Type="String" Name="ContentImage" Nullable="true" MaxLength="500" />
+          <Property Type="String" Name="ContentHeader" Nullable="true" />
+          <Property Type="Int32" Name="ContentStars" Nullable="true" />
+          <Property Type="String" Name="ContentTags" Nullable="true" MaxLength="1000" />
+          <Property Type="Int32" Name="ContentShowOrder" Nullable="true" />
+          <Property Type="String" Name="ContentViewDate" Nullable="true" MaxLength="120" />
+          <Property Type="Int32" Name="ContentViewCount" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="GetCombinedPhotoList_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="Link" Nullable="false" MaxLength="250" />
+          <Property Type="String" Name="PictureUrl" Nullable="false" MaxLength="250" />
+          <Property Type="String" Name="CaptionText" Nullable="false" />
+          <Property Type="String" Name="SharerName" Nullable="false" MaxLength="250" />
+          <Property Type="String" Name="SharerProfilePic" Nullable="false" MaxLength="500" />
+          <Property Type="String" Name="NomineeName" Nullable="false" MaxLength="250" />
+          <Property Type="String" Name="NomineeProfilePic" Nullable="false" MaxLength="500" />
+          <Property Type="Int32" Name="Source" Nullable="false" />
+          <Property Type="String" Name="SourceName" Nullable="false" MaxLength="2" />
+          <Property Type="Boolean" Name="IsActive" Nullable="false" />
+          <Property Type="Boolean" Name="IsDeleted" Nullable="false" />
+          <Property Type="DateTime" Name="CreateDate" Nullable="false" Precision="23" />
+        </ComplexType>
+        <ComplexType Name="GetContentDetail_Result">
+          <Property Type="Int32" Name="CategoryId" Nullable="false" />
+          <Property Type="Int32" Name="CategoryParentId" Nullable="false" />
+          <Property Type="String" Name="CategoryTitle" Nullable="false" MaxLength="500" />
+          <Property Type="String" Name="CategoryDescription" Nullable="true" MaxLength="1200" />
+          <Property Type="String" Name="CategoryImage" Nullable="true" MaxLength="1024" />
+          <Property Type="String" Name="CategoryKeywords" Nullable="true" MaxLength="500" />
+          <Property Type="Int32" Name="CategoryShowOrder" Nullable="false" />
+          <Property Type="DateTime" Name="CategoryCreateDate" Nullable="false" Precision="16" />
+          <Property Type="Int32" Name="ContentId" Nullable="false" />
+          <Property Type="String" Name="ContentTitle" Nullable="false" MaxLength="500" />
+          <Property Type="String" Name="ContentImage" Nullable="true" MaxLength="500" />
+          <Property Type="String" Name="ContentHeader" Nullable="false" />
+          <Property Type="String" Name="Detail" Nullable="true" MaxLength="Max" />
+          <Property Type="Int32" Name="ContentStars" Nullable="true" />
+          <Property Type="String" Name="ContentTags" Nullable="true" MaxLength="1000" />
+          <Property Type="Int32" Name="ContentShowOrder" Nullable="true" />
+          <Property Type="String" Name="ContentViewDate" Nullable="true" MaxLength="120" />
+          <Property Type="String" Name="RelatedContentTitle" Nullable="true" MaxLength="1024" />
+          <Property Type="String" Name="RelatedContentDetail" Nullable="true" />
+          <Property Type="String" Name="RelatedContentImage" Nullable="true" MaxLength="1024" />
+        </ComplexType>
+        <ComplexType Name="GetPopularContents_Result">
+          <Property Type="Int32" Name="CategoryId" Nullable="false" />
+          <Property Type="Int32" Name="ParentId" Nullable="false" />
+          <Property Type="String" Name="CategoryTitle" Nullable="false" MaxLength="500" />
+          <Property Type="String" Name="CategoryDescription" Nullable="true" MaxLength="1200" />
+          <Property Type="String" Name="CategoryImage" Nullable="true" MaxLength="1024" />
+          <Property Type="String" Name="CategoryKeywords" Nullable="true" MaxLength="500" />
+          <Property Type="Int32" Name="CategoryShowOrder" Nullable="false" />
+          <Property Type="DateTime" Name="CategoryCreateDate" Nullable="false" Precision="16" />
+          <Property Type="Int32" Name="ContentId" Nullable="true" />
+          <Property Type="String" Name="ContentTitle" Nullable="true" MaxLength="500" />
+          <Property Type="String" Name="ContentImage" Nullable="true" MaxLength="500" />
+          <Property Type="String" Name="ContentHeader" Nullable="true" />
+          <Property Type="Int32" Name="ContentStars" Nullable="true" />
+          <Property Type="String" Name="ContentTags" Nullable="true" MaxLength="1000" />
+          <Property Type="Int32" Name="ContentShowOrder" Nullable="true" />
+          <Property Type="String" Name="ContentViewDate" Nullable="true" MaxLength="120" />
+          <Property Type="Int32" Name="ContentViewCount" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="GetRecentContents_Result">
+          <Property Type="Int32" Name="CategoryId" Nullable="false" />
+          <Property Type="Int32" Name="ParentId" Nullable="false" />
+          <Property Type="String" Name="CategoryTitle" Nullable="false" MaxLength="500" />
+          <Property Type="String" Name="CategoryDescription" Nullable="true" MaxLength="1200" />
+          <Property Type="String" Name="CategoryImage" Nullable="true" MaxLength="1024" />
+          <Property Type="String" Name="CategoryKeywords" Nullable="true" MaxLength="500" />
+          <Property Type="Int32" Name="CategoryShowOrder" Nullable="false" />
+          <Property Type="DateTime" Name="CategoryCreateDate" Nullable="false" Precision="16" />
+          <Property Type="Int32" Name="ContentId" Nullable="true" />
+          <Property Type="String" Name="ContentTitle" Nullable="true" MaxLength="500" />
+          <Property Type="String" Name="ContentImage" Nullable="true" MaxLength="500" />
+          <Property Type="String" Name="ContentHeader" Nullable="true" />
+          <Property Type="Int32" Name="ContentStars" Nullable="true" />
+          <Property Type="String" Name="ContentTags" Nullable="true" MaxLength="1000" />
+          <Property Type="Int32" Name="ContentShowOrder" Nullable="true" />
+          <Property Type="String" Name="ContentViewDate" Nullable="true" MaxLength="120" />
+          <Property Type="Int32" Name="ContentViewCount" Nullable="true" />
+        </ComplexType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="LorealHairCareModelStoreContainer" CdmEntityContainer="LorealHairCareEntities">
+          <EntitySetMapping Name="AdminUsers">
+            <EntityTypeMapping TypeName="LorealHairCareModel.AdminUser">
+              <MappingFragment StoreEntitySet="AdminUsers">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Username" ColumnName="Username" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="LastLoginDate" ColumnName="LastLoginDate" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AskExperts">
+            <EntityTypeMapping TypeName="LorealHairCareModel.AskExpert">
+              <MappingFragment StoreEntitySet="AskExpert">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="SenderFullName" ColumnName="SenderFullName" />
+                <ScalarProperty Name="SenderEmail" ColumnName="SenderEmail" />
+                <ScalarProperty Name="SenderPhone" ColumnName="SenderPhone" />
+                <ScalarProperty Name="SenderIP" ColumnName="SenderIP" />
+                <ScalarProperty Name="Question" ColumnName="Question" />
+                <ScalarProperty Name="Answer" ColumnName="Answer" />
+                <ScalarProperty Name="ViewDate" ColumnName="ViewDate" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Categories">
+            <EntityTypeMapping TypeName="LorealHairCareModel.Category">
+              <MappingFragment StoreEntitySet="Categories">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Image" ColumnName="Image" />
+                <ScalarProperty Name="Keywords" ColumnName="Keywords" />
+                <ScalarProperty Name="UrlMapTitle" ColumnName="UrlMapTitle" />
+                <ScalarProperty Name="ShowOrder" ColumnName="ShowOrder" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ContentCategories">
+            <EntityTypeMapping TypeName="LorealHairCareModel.ContentCategory">
+              <MappingFragment StoreEntitySet="ContentCategories">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+                <ScalarProperty Name="ContentId" ColumnName="ContentId" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ContentRelatedContents">
+            <EntityTypeMapping TypeName="LorealHairCareModel.ContentRelatedContent">
+              <MappingFragment StoreEntitySet="ContentRelatedContents">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="RelatedContentId" ColumnName="RelatedContentId" />
+                <ScalarProperty Name="ContentId" ColumnName="ContentId" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Contents">
+            <EntityTypeMapping TypeName="LorealHairCareModel.Content">
+              <MappingFragment StoreEntitySet="Contents">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Image" ColumnName="Image" />
+                <ScalarProperty Name="Header" ColumnName="Header" />
+                <ScalarProperty Name="Detail" ColumnName="Detail" />
+                <ScalarProperty Name="ViewCount" ColumnName="ViewCount" />
+                <ScalarProperty Name="Stars" ColumnName="Stars" />
+                <ScalarProperty Name="Tags" ColumnName="Tags" />
+                <ScalarProperty Name="ShowOrder" ColumnName="ShowOrder" />
+                <ScalarProperty Name="ViewDate" ColumnName="ViewDate" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="FbNominees">
+            <EntityTypeMapping TypeName="LorealHairCareModel.FbNominee">
+              <MappingFragment StoreEntitySet="FbNominees">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="FbId" ColumnName="FbId" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="Link" ColumnName="Link" />
+                <ScalarProperty Name="Gender" ColumnName="Gender" />
+                <ScalarProperty Name="Locale" ColumnName="Locale" />
+                <ScalarProperty Name="Birthday" ColumnName="Birthday" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="PictureUrl" ColumnName="PictureUrl" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="IGPhotos">
+            <EntityTypeMapping TypeName="LorealHairCareModel.IGPhoto">
+              <MappingFragment StoreEntitySet="IGPhotos">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="IGUserId" ColumnName="IGUserId" />
+                <ScalarProperty Name="IGNomineeId" ColumnName="IGNomineeId" />
+                <ScalarProperty Name="CaptionText" ColumnName="CaptionText" />
+                <ScalarProperty Name="CommentCount" ColumnName="CommentCount" />
+                <ScalarProperty Name="Created" ColumnName="Created" />
+                <ScalarProperty Name="Filter" ColumnName="Filter" />
+                <ScalarProperty Name="Link" ColumnName="Link" />
+                <ScalarProperty Name="LowResUrl" ColumnName="LowResUrl" />
+                <ScalarProperty Name="StandardResUrl" ColumnName="StandardResUrl" />
+                <ScalarProperty Name="ThumbnailUrl" ColumnName="ThumbnailUrl" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="IGUsers">
+            <EntityTypeMapping TypeName="LorealHairCareModel.IGUser">
+              <MappingFragment StoreEntitySet="IGUsers">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="InstaId" ColumnName="InstaId" />
+                <ScalarProperty Name="FullName" ColumnName="FullName" />
+                <ScalarProperty Name="Bio" ColumnName="Bio" />
+                <ScalarProperty Name="ProfilePicture" ColumnName="ProfilePicture" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="Website" ColumnName="Website" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RelatedContents">
+            <EntityTypeMapping TypeName="LorealHairCareModel.RelatedContent">
+              <MappingFragment StoreEntitySet="RelatedContents">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Detail" ColumnName="Detail" />
+                <ScalarProperty Name="Image" ColumnName="Image" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Users">
+            <EntityTypeMapping TypeName="LorealHairCareModel.User">
+              <MappingFragment StoreEntitySet="Users">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="FbId" ColumnName="FbId" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="Link" ColumnName="Link" />
+                <ScalarProperty Name="Gender" ColumnName="Gender" />
+                <ScalarProperty Name="Locale" ColumnName="Locale" />
+                <ScalarProperty Name="Birthday" ColumnName="Birthday" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="PictureUrl" ColumnName="PictureUrl" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="FBCombinedPhotos">
+            <EntityTypeMapping TypeName="LorealHairCareModel.FBCombinedPhoto">
+              <MappingFragment StoreEntitySet="FBCombinedPhotos">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Link" ColumnName="Link" />
+                <ScalarProperty Name="PictureUrl" ColumnName="PictureUrl" />
+                <ScalarProperty Name="SharerName" ColumnName="SharerName" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="SharerProfilePic" ColumnName="SharerProfilePic" />
+                <ScalarProperty Name="NomineeName" ColumnName="NomineeName" />
+                <ScalarProperty Name="NomineeProfilePic" ColumnName="NomineeProfilePic" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="IGCombinedPhotos">
+            <EntityTypeMapping TypeName="LorealHairCareModel.IGCombinedPhoto">
+              <MappingFragment StoreEntitySet="IGCombinedPhotos">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Link" ColumnName="Link" />
+                <ScalarProperty Name="StandardResUrl" ColumnName="StandardResUrl" />
+                <ScalarProperty Name="ThumbnailUrl" ColumnName="ThumbnailUrl" />
+                <ScalarProperty Name="CaptionText" ColumnName="CaptionText" />
+                <ScalarProperty Name="SharerName" ColumnName="SharerName" />
+                <ScalarProperty Name="SharerProfilePic" ColumnName="SharerProfilePic" />
+                <ScalarProperty Name="NomineeName" ColumnName="NomineeName" />
+                <ScalarProperty Name="NomineeProfilePic" ColumnName="NomineeProfilePic" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="vwContentWithCategories">
+            <EntityTypeMapping TypeName="LorealHairCareModel.vwContentWithCategory">
+              <MappingFragment StoreEntitySet="vwContentWithCategories">
+                <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+                <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+                <ScalarProperty Name="CategoryTitle" ColumnName="CategoryTitle" />
+                <ScalarProperty Name="CategoryDescription" ColumnName="CategoryDescription" />
+                <ScalarProperty Name="CategoryImage" ColumnName="CategoryImage" />
+                <ScalarProperty Name="CategoryKeywords" ColumnName="CategoryKeywords" />
+                <ScalarProperty Name="CategoryShowOrder" ColumnName="CategoryShowOrder" />
+                <ScalarProperty Name="CategoryCreateDate" ColumnName="CategoryCreateDate" />
+                <ScalarProperty Name="ContentId" ColumnName="ContentId" />
+                <ScalarProperty Name="ContentTitle" ColumnName="ContentTitle" />
+                <ScalarProperty Name="ContentImage" ColumnName="ContentImage" />
+                <ScalarProperty Name="ContentHeader" ColumnName="ContentHeader" />
+                <ScalarProperty Name="ContentStars" ColumnName="ContentStars" />
+                <ScalarProperty Name="ContentTags" ColumnName="ContentTags" />
+                <ScalarProperty Name="ContentShowOrder" ColumnName="ContentShowOrder" />
+                <ScalarProperty Name="ContentViewDate" ColumnName="ContentViewDate" />
+                <ScalarProperty Name="ContentViewCount" ColumnName="ContentViewCount" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="GetCategoryContentList" FunctionName="LorealHairCareModel.Store.GetCategoryContentList">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="LorealHairCareModel.GetCategoryContentList_Result">
+                <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+                <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+                <ScalarProperty Name="CategoryTitle" ColumnName="CategoryTitle" />
+                <ScalarProperty Name="CategoryDescription" ColumnName="CategoryDescription" />
+                <ScalarProperty Name="CategoryImage" ColumnName="CategoryImage" />
+                <ScalarProperty Name="CategoryKeywords" ColumnName="CategoryKeywords" />
+                <ScalarProperty Name="CategoryShowOrder" ColumnName="CategoryShowOrder" />
+                <ScalarProperty Name="CategoryCreateDate" ColumnName="CategoryCreateDate" />
+                <ScalarProperty Name="ContentId" ColumnName="ContentId" />
+                <ScalarProperty Name="ContentTitle" ColumnName="ContentTitle" />
+                <ScalarProperty Name="ContentImage" ColumnName="ContentImage" />
+                <ScalarProperty Name="ContentHeader" ColumnName="ContentHeader" />
+                <ScalarProperty Name="ContentStars" ColumnName="ContentStars" />
+                <ScalarProperty Name="ContentTags" ColumnName="ContentTags" />
+                <ScalarProperty Name="ContentShowOrder" ColumnName="ContentShowOrder" />
+                <ScalarProperty Name="ContentViewDate" ColumnName="ContentViewDate" />
+                <ScalarProperty Name="ContentViewCount" ColumnName="ContentViewCount" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="GetCombinedPhotoList" FunctionName="LorealHairCareModel.Store.GetCombinedPhotoList">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="LorealHairCareModel.GetCombinedPhotoList_Result">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Link" ColumnName="Link" />
+                <ScalarProperty Name="PictureUrl" ColumnName="PictureUrl" />
+                <ScalarProperty Name="CaptionText" ColumnName="CaptionText" />
+                <ScalarProperty Name="SharerName" ColumnName="SharerName" />
+                <ScalarProperty Name="SharerProfilePic" ColumnName="SharerProfilePic" />
+                <ScalarProperty Name="NomineeName" ColumnName="NomineeName" />
+                <ScalarProperty Name="NomineeProfilePic" ColumnName="NomineeProfilePic" />
+                <ScalarProperty Name="Source" ColumnName="Source" />
+                <ScalarProperty Name="SourceName" ColumnName="SourceName" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="GetContentDetail" FunctionName="LorealHairCareModel.Store.GetContentDetail">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="LorealHairCareModel.GetContentDetail_Result">
+                <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+                <ScalarProperty Name="CategoryParentId" ColumnName="CategoryParentId" />
+                <ScalarProperty Name="CategoryTitle" ColumnName="CategoryTitle" />
+                <ScalarProperty Name="CategoryDescription" ColumnName="CategoryDescription" />
+                <ScalarProperty Name="CategoryImage" ColumnName="CategoryImage" />
+                <ScalarProperty Name="CategoryKeywords" ColumnName="CategoryKeywords" />
+                <ScalarProperty Name="CategoryShowOrder" ColumnName="CategoryShowOrder" />
+                <ScalarProperty Name="CategoryCreateDate" ColumnName="CategoryCreateDate" />
+                <ScalarProperty Name="ContentId" ColumnName="ContentId" />
+                <ScalarProperty Name="ContentTitle" ColumnName="ContentTitle" />
+                <ScalarProperty Name="ContentImage" ColumnName="ContentImage" />
+                <ScalarProperty Name="ContentHeader" ColumnName="ContentHeader" />
+                <ScalarProperty Name="Detail" ColumnName="Detail" />
+                <ScalarProperty Name="ContentStars" ColumnName="ContentStars" />
+                <ScalarProperty Name="ContentTags" ColumnName="ContentTags" />
+                <ScalarProperty Name="ContentShowOrder" ColumnName="ContentShowOrder" />
+                <ScalarProperty Name="ContentViewDate" ColumnName="ContentViewDate" />
+                <ScalarProperty Name="RelatedContentTitle" ColumnName="RelatedContentTitle" />
+                <ScalarProperty Name="RelatedContentDetail" ColumnName="RelatedContentDetail" />
+                <ScalarProperty Name="RelatedContentImage" ColumnName="RelatedContentImage" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="GetPopularContents" FunctionName="LorealHairCareModel.Store.GetPopularContents">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="LorealHairCareModel.GetPopularContents_Result">
+                <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+                <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+                <ScalarProperty Name="CategoryTitle" ColumnName="CategoryTitle" />
+                <ScalarProperty Name="CategoryDescription" ColumnName="CategoryDescription" />
+                <ScalarProperty Name="CategoryImage" ColumnName="CategoryImage" />
+                <ScalarProperty Name="CategoryKeywords" ColumnName="CategoryKeywords" />
+                <ScalarProperty Name="CategoryShowOrder" ColumnName="CategoryShowOrder" />
+                <ScalarProperty Name="CategoryCreateDate" ColumnName="CategoryCreateDate" />
+                <ScalarProperty Name="ContentId" ColumnName="ContentId" />
+                <ScalarProperty Name="ContentTitle" ColumnName="ContentTitle" />
+                <ScalarProperty Name="ContentImage" ColumnName="ContentImage" />
+                <ScalarProperty Name="ContentHeader" ColumnName="ContentHeader" />
+                <ScalarProperty Name="ContentStars" ColumnName="ContentStars" />
+                <ScalarProperty Name="ContentTags" ColumnName="ContentTags" />
+                <ScalarProperty Name="ContentShowOrder" ColumnName="ContentShowOrder" />
+                <ScalarProperty Name="ContentViewDate" ColumnName="ContentViewDate" />
+                <ScalarProperty Name="ContentViewCount" ColumnName="ContentViewCount" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="GetRecentContents" FunctionName="LorealHairCareModel.Store.GetRecentContents">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="LorealHairCareModel.GetRecentContents_Result">
+                <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+                <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+                <ScalarProperty Name="CategoryTitle" ColumnName="CategoryTitle" />
+                <ScalarProperty Name="CategoryDescription" ColumnName="CategoryDescription" />
+                <ScalarProperty Name="CategoryImage" ColumnName="CategoryImage" />
+                <ScalarProperty Name="CategoryKeywords" ColumnName="CategoryKeywords" />
+                <ScalarProperty Name="CategoryShowOrder" ColumnName="CategoryShowOrder" />
+                <ScalarProperty Name="CategoryCreateDate" ColumnName="CategoryCreateDate" />
+                <ScalarProperty Name="ContentId" ColumnName="ContentId" />
+                <ScalarProperty Name="ContentTitle" ColumnName="ContentTitle" />
+                <ScalarProperty Name="ContentImage" ColumnName="ContentImage" />
+                <ScalarProperty Name="ContentHeader" ColumnName="ContentHeader" />
+                <ScalarProperty Name="ContentStars" ColumnName="ContentStars" />
+                <ScalarProperty Name="ContentTags" ColumnName="ContentTags" />
+                <ScalarProperty Name="ContentShowOrder" ColumnName="ContentShowOrder" />
+                <ScalarProperty Name="ContentViewDate" ColumnName="ContentViewDate" />
+                <ScalarProperty Name="ContentViewCount" ColumnName="ContentViewCount" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

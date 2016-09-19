@@ -1,0 +1,103 @@
+.ms-partialview-template .ms-slide-info {
+	
+	  font-family: 'proxima_novaregular';
+	margin-top: 20px;
+	width: 100%;
+	z-index:999;
+}
+
+.ms-partialview-template .ms-slide-info h3 {
+	font-family: 'proxima_novabold';
+	margin: 5px;
+	font-size: 28px;
+	color: #000000;
+	text-align:center
+}
+
+.ms-partialview-template .ms-slide-info h4 {
+	margin: 5px;
+	font-size: 14pt;
+	color: #7A7A7A;
+}
+
+.ms-partialview-template .ms-slide-info p {
+	font-family: 'proxima_novasemibold';
+	font-size: 20px;
+	margin: 6px;
+	color:#101010;
+	text-align:center
+}	
+
+.ms-partialview-template .ms-slide-info p._left {
+
+	text-align:left !important;
+}	
+
+
+.ms-partialview-template .ms-slide-info p.half {
+	width:80%;
+	margin:auto;
+}	
+
+
+.infoWrapper
+{
+	width:350px;
+	margin:auto
+	
+	}
+
+.infoTitle{
+	width:auto;
+	height:40px;
+	background-color:#FFF;
+	margin-bottom:2px;
+	float:left;
+	
+	}
+	.infoDesc{
+		clear:both;
+		width:90%;
+	height:100px;
+	background-color:#FFF;
+    margin:auto
+	
+	}
+	
+
+
+
+/* Layers */
+.ms-layer.video-title {
+    font-family: 'proxima_novasemibold';
+    color: white;
+    font-weight: 600;
+    font-size: 42px;
+    margin:0px;
+    letter-spacing:0px;
+}
+
+.ms-layer.video-title.video-top-title {
+    font-size: 16px;
+    color: gray;
+}
+
+.ms-layer.video-title.video-sub-title {
+    font-size: 22px;
+}
+
+
+
+
+
+
+.ww {
+	
+	width: 400px;
+	margin:auto;
+	text-align: center !important;
+
+	
+}
+
+.ms-bullets { z-index: 9999 }

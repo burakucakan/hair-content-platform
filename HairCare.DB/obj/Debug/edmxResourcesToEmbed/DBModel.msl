@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="LorealHairCareModelStoreContainer" CdmEntityContainer="LorealHairCareEntities">
+    <EntitySetMapping Name="AdminUsers">
+      <EntityTypeMapping TypeName="LorealHairCareModel.AdminUser">
+        <MappingFragment StoreEntitySet="AdminUsers">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="LastLoginDate" ColumnName="LastLoginDate" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Categories">
+      <EntityTypeMapping TypeName="LorealHairCareModel.Category">
+        <MappingFragment StoreEntitySet="Categories">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Keywords" ColumnName="Keywords" />
+          <ScalarProperty Name="UrlMapTitle" ColumnName="UrlMapTitle" />
+          <ScalarProperty Name="ShowOrder" ColumnName="ShowOrder" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ContentCategories">
+      <EntityTypeMapping TypeName="LorealHairCareModel.ContentCategory">
+        <MappingFragment StoreEntitySet="ContentCategories">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+          <ScalarProperty Name="ContentId" ColumnName="ContentId" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ContentRelatedContents">
+      <EntityTypeMapping TypeName="LorealHairCareModel.ContentRelatedContent">
+        <MappingFragment StoreEntitySet="ContentRelatedContents">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="RelatedContentId" ColumnName="RelatedContentId" />
+          <ScalarProperty Name="ContentId" ColumnName="ContentId" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Contents">
+      <EntityTypeMapping TypeName="LorealHairCareModel.Content">
+        <MappingFragment StoreEntitySet="Contents">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Header" ColumnName="Header" />
+          <ScalarProperty Name="Detail" ColumnName="Detail" />
+          <ScalarProperty Name="ViewCount" ColumnName="ViewCount" />
+          <ScalarProperty Name="Stars" ColumnName="Stars" />
+          <ScalarProperty Name="Tags" ColumnName="Tags" />
+          <ScalarProperty Name="ShowOrder" ColumnName="ShowOrder" />
+          <ScalarProperty Name="ViewDate" ColumnName="ViewDate" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IGPhotos">
+      <EntityTypeMapping TypeName="LorealHairCareModel.IGPhoto">
+        <MappingFragment StoreEntitySet="IGPhotos">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="IGUserId" ColumnName="IGUserId" />
+          <ScalarProperty Name="IGNomineeId" ColumnName="IGNomineeId" />
+          <ScalarProperty Name="CaptionText" ColumnName="CaptionText" />
+          <ScalarProperty Name="CommentCount" ColumnName="CommentCount" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="Filter" ColumnName="Filter" />
+          <ScalarProperty Name="Link" ColumnName="Link" />
+          <ScalarProperty Name="LowResUrl" ColumnName="LowResUrl" />
+          <ScalarProperty Name="StandardResUrl" ColumnName="StandardResUrl" />
+          <ScalarProperty Name="ThumbnailUrl" ColumnName="ThumbnailUrl" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IGUsers">
+      <EntityTypeMapping TypeName="LorealHairCareModel.IGUser">
+        <MappingFragment StoreEntitySet="IGUsers">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="InstaId" ColumnName="InstaId" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="Bio" ColumnName="Bio" />
+          <ScalarProperty Name="ProfilePicture" ColumnName="ProfilePicture" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Website" ColumnName="Website" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InstagramPhotos">
+      <EntityTypeMapping TypeName="LorealHairCareModel.InstagramPhoto">
+        <MappingFragment StoreEntitySet="InstagramPhotos">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="InstaId" ColumnName="InstaId" />
+          <ScalarProperty Name="CaptionText" ColumnName="CaptionText" />
+          <ScalarProperty Name="CommentCount" ColumnName="CommentCount" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="LikeCount" ColumnName="LikeCount" />
+          <ScalarProperty Name="Link" ColumnName="Link" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+          <ScalarProperty Name="LowResolution" ColumnName="LowResolution" />
+          <ScalarProperty Name="StandartResolution" ColumnName="StandartResolution" />
+          <ScalarProperty Name="Thumbnail" ColumnName="Thumbnail" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RelatedContents">
+      <EntityTypeMapping TypeName="LorealHairCareModel.RelatedContent">
+        <MappingFragment StoreEntitySet="RelatedContents">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Detail" ColumnName="Detail" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="LorealHairCareModel.User">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="FbId" ColumnName="FbId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Link" ColumnName="Link" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="Locale" ColumnName="Locale" />
+          <ScalarProperty Name="Birthday" ColumnName="Birthday" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="PictureUrl" ColumnName="PictureUrl" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="GetCategoryDetails" FunctionName="LorealHairCareModel.Store.GetCategoryDetails">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="LorealHairCareModel.GetCategoryDetails_Result">
+          <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+          <ScalarProperty Name="CategoryParentId" ColumnName="CategoryParentId" />
+          <ScalarProperty Name="CategoryTitle" ColumnName="CategoryTitle" />
+          <ScalarProperty Name="CategoryDescription" ColumnName="CategoryDescription" />
+          <ScalarProperty Name="CategoryImage" ColumnName="CategoryImage" />
+          <ScalarProperty Name="CategoryKeywords" ColumnName="CategoryKeywords" />
+          <ScalarProperty Name="CategoryShowOrder" ColumnName="CategoryShowOrder" />
+          <ScalarProperty Name="CategoryCreateDate" ColumnName="CategoryCreateDate" />
+          <ScalarProperty Name="ContentId" ColumnName="ContentId" />
+          <ScalarProperty Name="ContentTitle" ColumnName="ContentTitle" />
+          <ScalarProperty Name="ContentImage" ColumnName="ContentImage" />
+          <ScalarProperty Name="ContentHeader" ColumnName="ContentHeader" />
+          <ScalarProperty Name="ContentStars" ColumnName="ContentStars" />
+          <ScalarProperty Name="ContentTags" ColumnName="ContentTags" />
+          <ScalarProperty Name="ContentShowOrder" ColumnName="ContentShowOrder" />
+          <ScalarProperty Name="ContentViewDate" ColumnName="ContentViewDate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetContentDetail" FunctionName="LorealHairCareModel.Store.GetContentDetail">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="LorealHairCareModel.GetContentDetail_Result">
+          <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+          <ScalarProperty Name="CategoryParentId" ColumnName="CategoryParentId" />
+          <ScalarProperty Name="CategoryTitle" ColumnName="CategoryTitle" />
+          <ScalarProperty Name="CategoryDescription" ColumnName="CategoryDescription" />
+          <ScalarProperty Name="CategoryImage" ColumnName="CategoryImage" />
+          <ScalarProperty Name="CategoryKeywords" ColumnName="CategoryKeywords" />
+          <ScalarProperty Name="CategoryShowOrder" ColumnName="CategoryShowOrder" />
+          <ScalarProperty Name="CategoryCreateDate" ColumnName="CategoryCreateDate" />
+          <ScalarProperty Name="ContentId" ColumnName="ContentId" />
+          <ScalarProperty Name="ContentTitle" ColumnName="ContentTitle" />
+          <ScalarProperty Name="ContentImage" ColumnName="ContentImage" />
+          <ScalarProperty Name="ContentHeader" ColumnName="ContentHeader" />
+          <ScalarProperty Name="Detail" ColumnName="Detail" />
+          <ScalarProperty Name="ContentStars" ColumnName="ContentStars" />
+          <ScalarProperty Name="ContentTags" ColumnName="ContentTags" />
+          <ScalarProperty Name="ContentShowOrder" ColumnName="ContentShowOrder" />
+          <ScalarProperty Name="ContentViewDate" ColumnName="ContentViewDate" />
+          <ScalarProperty Name="RelatedContentTitle" ColumnName="RelatedContentTitle" />
+          <ScalarProperty Name="RelatedContentDetail" ColumnName="RelatedContentDetail" />
+          <ScalarProperty Name="RelatedContentTitle1" ColumnName="RelatedContentTitle1" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

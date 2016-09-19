@@ -1,0 +1,16 @@
+/Users/burak/Works/__Archive/Elseve Hair Care/WebProject/HairCare.Service/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/Users/burak/Works/__Archive/Elseve Hair Care/WebProject/HairCare.Service/bin/Debug/HairCare.Service.dll.mdb
+/Users/burak/Works/__Archive/Elseve Hair Care/WebProject/HairCare.Service/bin/Debug/HairCare.Service.dll
+/Users/burak/Works/__Archive/Elseve Hair Care/WebProject/HairCare.Service/obj/Debug/HairCare.Service.dll
+/Users/burak/Works/__Archive/Elseve Hair Care/WebProject/HairCare.Service/obj/Debug/HairCare.Service.dll.mdb
+/Users/burak/Works/__Archive/Elseve Hair Care/WebProject/HairCare.Service/bin/Debug/EntityFramework.dll
+/Users/burak/Works/__Archive/Elseve Hair Care/WebProject/HairCare.Service/bin/Debug/Newtonsoft.Json.dll
+/Users/burak/Works/__Archive/Elseve Hair Care/WebProject/HairCare.Service/bin/Debug/FbManager.dll
+/Users/burak/Works/__Archive/Elseve Hair Care/WebProject/HairCare.Service/bin/Debug/FbManager.dll.mdb
+/Users/burak/Works/__Archive/Elseve Hair Care/WebProject/HairCare.Service/bin/Debug/LIB.dll
+/Users/burak/Works/__Archive/Elseve Hair Care/WebProject/HairCare.Service/bin/Debug/LIB.dll.mdb
+/Users/burak/Works/__Archive/Elseve Hair Care/WebProject/HairCare.Service/bin/Debug/LIB.pdb
+/Users/burak/Works/__Archive/Elseve Hair Care/WebProject/HairCare.Service/bin/Debug/HairCare.DB.dll
+/Users/burak/Works/__Archive/Elseve Hair Care/WebProject/HairCare.Service/bin/Debug/HairCare.DB.dll.mdb
+/Users/burak/Works/__Archive/Elseve Hair Care/WebProject/HairCare.Service/bin/Debug/HairCare.Com.dll
+/Users/burak/Works/__Archive/Elseve Hair Care/WebProject/HairCare.Service/bin/Debug/HairCare.Com.dll.mdb

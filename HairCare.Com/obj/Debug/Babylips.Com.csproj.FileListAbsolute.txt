@@ -1,0 +1,9 @@
+D:\Projects\Loreal Maybelline Babylips\Babylips.Com\bin\Debug\Babylips.Com.dll
+D:\Projects\Loreal Maybelline Babylips\Babylips.Com\bin\Debug\Babylips.Com.pdb
+D:\Projects\Loreal Maybelline Babylips\Babylips.Com\bin\Debug\LIB.dll
+D:\Projects\Loreal Maybelline Babylips\Babylips.Com\bin\Debug\Newtonsoft.Json.dll
+D:\Projects\Loreal Maybelline Babylips\Babylips.Com\bin\Debug\LIB.pdb
+D:\Projects\Loreal Maybelline Babylips\Babylips.Com\bin\Debug\Newtonsoft.Json.xml
+D:\Projects\Loreal Maybelline Babylips\Babylips.Com\obj\Debug\Babylips.Com.csprojResolveAssemblyReference.cache
+D:\Projects\Loreal Maybelline Babylips\Babylips.Com\obj\Debug\Babylips.Com.dll
+D:\Projects\Loreal Maybelline Babylips\Babylips.Com\obj\Debug\Babylips.Com.pdb

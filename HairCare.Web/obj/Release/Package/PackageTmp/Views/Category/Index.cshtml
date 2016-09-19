@@ -1,0 +1,79 @@
+﻿@model HairCare.Web.Models.CategoryModel
+@*<style>
+    .populer_area { background-color: #FFF !important; }
+    .populer_area h1 { color: #000 !important; }
+</style>*@
+
+<script>
+
+    $(function () {
+
+        loadPopularContent();
+
+        $('.page_content').click(function () {
+            location.href = $(this).attr("data-href");
+        });
+    })
+
+    function loadPopularContent() {
+        var _popularPath = '/Content/Popular?ParentId=@Model.ContentList.FirstOrDefault().CategoryId';
+        $('.populer_area').load(_popularPath);
+    }
+
+</script>
+
+<div class="sac_bakimi">
+    <div class="content_inner">
+        <div class="page_head">
+            <h1 class="heading">@Model.CategoryTitle</h1>
+
+            @if (Model.CategoryDescription != null) { 
+            <p class="paragraph">@Html.Raw(Model.CategoryDescription)</p>
+            }
+        </div>
+
+        @if (Model.ContentList == null || Model.ContentList.Count() <= 0) { 
+            <text>Bu kategoriye dair içerik bulunamadı!</text>
+        }
+        else
+        {
+            foreach (var item in Model.ContentList.ToList())
+            {
+                <div class="page_content" data-href="@PathHelper.ContentDetail(item.ContentId.Value, item.ContentTitle)">
+                    <div class="bakim_img_frame">
+                        <img src="~/images/content/@item.ContentImage" class="bakim_img" />
+                    </div>
+                    <div class="bakim_content">
+                        <div class="article_bakim_unit_wrapper">
+                            <div class="article_bakim">
+
+                                <div class="category-item">
+
+                                    <h2>@item.ContentTitle</h2>
+                                    <a class="detailLink" href="@PathHelper.ContentDetail(item.ContentId.Value, item.ContentTitle)">
+                                        @Html.Raw(item.ContentHeader)
+                                    </a>
+                                </div>
+                                <div class="article_bakim_bottom">
+                                    <div class="icons_wrapper">
+                                        <div class="fix_width">
+                                            <p class="bottomTxt">@item.ContentViewDate</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+
+
+    </div>
+</div>
+
+<div class="populer_area"></div>
+
+
+@{ Html.RenderAction("MainPart", "AskExpert"); }

@@ -1,0 +1,13 @@
+﻿@model IEnumerable<HairCare.DB.Content>
+
+    <h1 class="page_title">İPUÇLARI</h1>
+
+    <div class="ipuclari_area">        
+@foreach (HairCare.DB.Content c in Model)
+{
+    <a href="@PathHelper.ContentDetail(c.Id, c.Title)" class="ipucu_box2">
+        <h3 class="ipucu_title">@c.Title</h3>
+        @Html.Raw(c.Header)
+    </a>
+}
+    </div>

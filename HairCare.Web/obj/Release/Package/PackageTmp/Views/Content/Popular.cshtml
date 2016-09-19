@@ -1,0 +1,51 @@
+﻿@model IEnumerable<HairCare.DB.GetPopularContents_Result>
+
+<script>
+    $(document).ready(function () {
+        initPopularSlider();        
+
+    });
+function initPopularSlider() {
+    var sliderPopuler = new MasterSlider();
+    sliderPopuler.control('bullets', { autohide: false, align: 'bottom', margin: 0 });
+    sliderPopuler.control('slideinfo', { insertTo: "#partial-populer", autohide: false, align: 'bottom', margin: -150, size: 190 });
+    sliderPopuler.setup('populerSlide', {
+        width: 350,
+        height: 450,
+        space: 10,
+        align: 'top',
+        margin: 0,
+        loop: true,
+        view: 'fadeWave',
+        layout: 'partialview',
+        fillMode: 'fit',
+    });
+
+}
+    </script>
+
+   
+     <h1 class="page_title _white">SIK ZİYARET EDİLENLER</h1>
+
+    <div class="ms-partialview-template" id="partial-populer">
+     <!-- masterslider -->
+     <div class="master-slider ms-skin-default" id="populerSlide">
+        
+         @foreach(var c in Model){
+              <a href="@PathHelper.ContentDetail(c.ContentId.Value, c.ContentTitle)" class="ms-slide">
+               <img src="/scripts/masterslider/blank.gif" data-src="/images/content/@c.ContentImage" alt="" />
+               <div class="ms-info">
+                <div class="infoWrapper">
+                 <div class="infoDesc">
+                  <p class="_left">@LIB.StringHelper.Left(c.ContentTitle, 160, "...")</p>
+                 </div>
+                </div>
+               </div>
+              </a>
+         }
+
+
+     </div>
+     <!-- end of masterslider -->
+    </div>
+

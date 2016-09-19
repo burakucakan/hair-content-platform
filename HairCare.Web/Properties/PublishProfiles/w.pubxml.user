@@ -1,0 +1,1489 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Users\Jiqsaw\Desktop\w</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>11/16/2014 21:21:29</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>11/12/2014 22:08:06</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>11/12/2014 22:08:06</publishTime>
+    </File>
+    <File Include="bin/FbManager.dll">
+      <publishTime>12/15/2014 04:28:12</publishTime>
+    </File>
+    <File Include="bin/HairCare.Com.dll">
+      <publishTime>12/15/2014 04:28:12</publishTime>
+    </File>
+    <File Include="bin/HairCare.DB.dll">
+      <publishTime>12/15/2014 04:28:11</publishTime>
+    </File>
+    <File Include="bin/HairCare.Service.dll">
+      <publishTime>12/15/2014 04:28:12</publishTime>
+    </File>
+    <File Include="bin/HairCare.Web.dll">
+      <publishTime>12/15/2014 06:13:49</publishTime>
+    </File>
+    <File Include="bin/LIB.dll">
+      <publishTime>12/15/2014 04:28:11</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.Core.dll">
+      <publishTime>11/16/2014 21:21:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.EntityFramework.dll">
+      <publishTime>11/16/2014 21:21:35</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.Owin.dll">
+      <publishTime>11/16/2014 21:21:35</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CSharp.dll">
+      <publishTime>09/26/2012 03:16:08</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.dll">
+      <publishTime>11/16/2014 21:21:35</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Host.SystemWeb.dll">
+      <publishTime>11/16/2014 21:21:36</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Cookies.dll">
+      <publishTime>11/16/2014 21:21:37</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.dll">
+      <publishTime>11/16/2014 21:21:36</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Facebook.dll">
+      <publishTime>11/16/2014 21:21:37</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Google.dll">
+      <publishTime>11/16/2014 21:21:37</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.MicrosoftAccount.dll">
+      <publishTime>11/16/2014 21:21:38</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.OAuth.dll">
+      <publishTime>11/16/2014 21:21:37</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Twitter.dll">
+      <publishTime>11/16/2014 21:21:37</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>11/16/2014 21:21:27</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>06/25/2014 11:44:25</publishTime>
+    </File>
+    <File Include="bin/Owin.dll">
+      <publishTime>11/16/2014 21:21:35</publishTime>
+    </File>
+    <File Include="bin/System.ComponentModel.DataAnnotations.dll">
+      <publishTime>09/26/2012 03:16:08</publishTime>
+    </File>
+    <File Include="bin/System.Configuration.dll">
+      <publishTime>09/26/2012 03:16:08</publishTime>
+    </File>
+    <File Include="bin/System.Data.DataSetExtensions.dll">
+      <publishTime>09/26/2012 03:16:08</publishTime>
+    </File>
+    <File Include="bin/System.Data.dll">
+      <publishTime>09/26/2012 03:16:08</publishTime>
+    </File>
+    <File Include="bin/System.dll">
+      <publishTime>09/26/2012 03:16:08</publishTime>
+    </File>
+    <File Include="bin/System.Drawing.dll">
+      <publishTime>09/26/2012 03:16:08</publishTime>
+    </File>
+    <File Include="bin/System.EnterpriseServices.dll">
+      <publishTime>09/26/2012 03:16:08</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.dll">
+      <publishTime>09/26/2012 03:16:08</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.WebRequest.dll">
+      <publishTime>09/26/2012 03:16:08</publishTime>
+    </File>
+    <File Include="bin/System.Web.Abstractions.dll">
+      <publishTime>09/26/2012 03:16:08</publishTime>
+    </File>
+    <File Include="bin/System.Web.ApplicationServices.dll">
+      <publishTime>09/26/2012 03:16:08</publishTime>
+    </File>
+    <File Include="bin/System.Web.dll">
+      <publishTime>09/26/2012 03:16:08</publishTime>
+    </File>
+    <File Include="bin/System.Web.DynamicData.dll">
+      <publishTime>09/26/2012 03:16:08</publishTime>
+    </File>
+    <File Include="bin/System.Web.Entity.dll">
+      <publishTime>09/26/2012 03:16:08</publishTime>
+    </File>
+    <File Include="bin/System.Web.Extensions.dll">
+      <publishTime>09/26/2012 03:16:08</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>11/16/2014 21:21:27</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>11/16/2014 21:21:28</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>11/16/2014 21:21:27</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>11/16/2014 21:21:26</publishTime>
+    </File>
+    <File Include="bin/System.Web.Routing.dll">
+      <publishTime>09/26/2012 03:16:08</publishTime>
+    </File>
+    <File Include="bin/System.Web.Services.dll">
+      <publishTime>09/26/2012 03:16:08</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>11/16/2014 21:21:27</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>11/16/2014 21:21:27</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>11/16/2014 21:21:27</publishTime>
+    </File>
+    <File Include="bin/System.Xml.dll">
+      <publishTime>09/26/2012 03:16:08</publishTime>
+    </File>
+    <File Include="bin/System.Xml.Linq.dll">
+      <publishTime>09/26/2012 03:16:08</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>11/16/2014 21:21:29</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>11/17/2014 23:34:54</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>12/07/2014 19:52:12</publishTime>
+    </File>
+    <File Include="images/aday.jpg">
+      <publishTime>12/13/2014 19:16:16</publishTime>
+    </File>
+    <File Include="images/aday_blank.png">
+      <publishTime>12/13/2014 19:16:18</publishTime>
+    </File>
+    <File Include="images/bakim_icon01.png">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/banner01.jpg">
+      <publishTime>12/13/2014 23:35:47</publishTime>
+    </File>
+    <File Include="images/banu.jpg">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/billur_saatci.jpg">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/CHRISTOPHE_ROBIN.jpg">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/CHRISTOPHE_ROBIN2.jpg">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/circle_img.jpg">
+      <publishTime>12/13/2014 19:16:16</publishTime>
+    </File>
+    <File Include="images/clock.png">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/content/1.png">
+      <publishTime>12/13/2014 19:16:19</publishTime>
+    </File>
+    <File Include="images/content/1_b.png">
+      <publishTime>12/13/2014 19:16:17</publishTime>
+    </File>
+    <File Include="images/content/2.png">
+      <publishTime>12/13/2014 19:16:21</publishTime>
+    </File>
+    <File Include="images/content/2_b.png">
+      <publishTime>12/13/2014 19:16:22</publishTime>
+    </File>
+    <File Include="images/content/3.png">
+      <publishTime>12/13/2014 19:16:20</publishTime>
+    </File>
+    <File Include="images/content/3_b.png">
+      <publishTime>12/13/2014 19:16:21</publishTime>
+    </File>
+    <File Include="images/content/article1.jpg">
+      <publishTime>12/14/2014 00:43:14</publishTime>
+    </File>
+    <File Include="images/content/article10.jpg">
+      <publishTime>12/14/2014 00:43:14</publishTime>
+    </File>
+    <File Include="images/content/article11.jpg">
+      <publishTime>12/14/2014 00:43:14</publishTime>
+    </File>
+    <File Include="images/content/article12.jpg">
+      <publishTime>12/14/2014 00:43:14</publishTime>
+    </File>
+    <File Include="images/content/article13.jpg">
+      <publishTime>12/14/2014 00:43:14</publishTime>
+    </File>
+    <File Include="images/content/article14.jpg">
+      <publishTime>12/14/2014 00:43:14</publishTime>
+    </File>
+    <File Include="images/content/article15.jpg">
+      <publishTime>12/14/2014 00:43:14</publishTime>
+    </File>
+    <File Include="images/content/article15_1.jpg">
+      <publishTime>12/14/2014 00:43:14</publishTime>
+    </File>
+    <File Include="images/content/article16.jpg">
+      <publishTime>12/14/2014 00:43:14</publishTime>
+    </File>
+    <File Include="images/content/article17.jpg">
+      <publishTime>12/14/2014 00:43:14</publishTime>
+    </File>
+    <File Include="images/content/article18.jpg">
+      <publishTime>12/14/2014 00:43:14</publishTime>
+    </File>
+    <File Include="images/content/article2.jpg">
+      <publishTime>12/14/2014 00:43:14</publishTime>
+    </File>
+    <File Include="images/content/article20.jpg">
+      <publishTime>12/14/2014 00:43:14</publishTime>
+    </File>
+    <File Include="images/content/article21.jpg">
+      <publishTime>12/14/2014 00:43:14</publishTime>
+    </File>
+    <File Include="images/content/article22.jpg">
+      <publishTime>12/14/2014 00:43:14</publishTime>
+    </File>
+    <File Include="images/content/article23.jpg">
+      <publishTime>12/14/2014 00:43:14</publishTime>
+    </File>
+    <File Include="images/content/article24.jpg">
+      <publishTime>12/14/2014 00:43:14</publishTime>
+    </File>
+    <File Include="images/content/article25.jpg">
+      <publishTime>12/14/2014 00:43:14</publishTime>
+    </File>
+    <File Include="images/content/article26.jpg">
+      <publishTime>12/14/2014 00:43:14</publishTime>
+    </File>
+    <File Include="images/content/article27.jpg">
+      <publishTime>12/14/2014 00:43:14</publishTime>
+    </File>
+    <File Include="images/content/article28.jpg">
+      <publishTime>12/14/2014 00:43:14</publishTime>
+    </File>
+    <File Include="images/content/article29.jpg">
+      <publishTime>12/14/2014 00:43:14</publishTime>
+    </File>
+    <File Include="images/content/article29_1.jpg">
+      <publishTime>12/14/2014 00:43:14</publishTime>
+    </File>
+    <File Include="images/content/article29_2.jpg">
+      <publishTime>12/14/2014 00:43:14</publishTime>
+    </File>
+    <File Include="images/content/article3.jpg">
+      <publishTime>12/14/2014 00:43:14</publishTime>
+    </File>
+    <File Include="images/content/article30.jpg">
+      <publishTime>12/14/2014 00:43:14</publishTime>
+    </File>
+    <File Include="images/content/article31.jpg">
+      <publishTime>12/14/2014 00:43:14</publishTime>
+    </File>
+    <File Include="images/content/article32.jpg">
+      <publishTime>12/14/2014 00:43:14</publishTime>
+    </File>
+    <File Include="images/content/article33.jpg">
+      <publishTime>12/14/2014 00:43:14</publishTime>
+    </File>
+    <File Include="images/content/article34.jpg">
+      <publishTime>12/14/2014 00:43:14</publishTime>
+    </File>
+    <File Include="images/content/article35.jpg">
+      <publishTime>12/14/2014 00:43:14</publishTime>
+    </File>
+    <File Include="images/content/article36.jpg">
+      <publishTime>12/14/2014 00:43:14</publishTime>
+    </File>
+    <File Include="images/content/article37.jpg">
+      <publishTime>12/14/2014 00:43:14</publishTime>
+    </File>
+    <File Include="images/content/article38.jpg">
+      <publishTime>12/14/2014 00:43:14</publishTime>
+    </File>
+    <File Include="images/content/article39.jpg">
+      <publishTime>12/14/2014 00:43:14</publishTime>
+    </File>
+    <File Include="images/content/article4.jpg">
+      <publishTime>12/14/2014 00:43:14</publishTime>
+    </File>
+    <File Include="images/content/article40.jpg">
+      <publishTime>12/14/2014 00:43:14</publishTime>
+    </File>
+    <File Include="images/content/article41.jpg">
+      <publishTime>12/14/2014 00:43:14</publishTime>
+    </File>
+    <File Include="images/content/article42.jpg">
+      <publishTime>12/14/2014 00:43:14</publishTime>
+    </File>
+    <File Include="images/content/article43.jpg">
+      <publishTime>12/14/2014 00:43:14</publishTime>
+    </File>
+    <File Include="images/content/article44.jpg">
+      <publishTime>12/14/2014 00:43:14</publishTime>
+    </File>
+    <File Include="images/content/article45.jpg">
+      <publishTime>12/14/2014 00:43:14</publishTime>
+    </File>
+    <File Include="images/content/article46.jpg">
+      <publishTime>12/14/2014 00:43:14</publishTime>
+    </File>
+    <File Include="images/content/article47.jpg">
+      <publishTime>12/14/2014 00:43:14</publishTime>
+    </File>
+    <File Include="images/content/article48.jpg">
+      <publishTime>12/14/2014 00:43:14</publishTime>
+    </File>
+    <File Include="images/content/article49.jpg">
+      <publishTime>12/14/2014 00:43:14</publishTime>
+    </File>
+    <File Include="images/content/article5.jpg">
+      <publishTime>12/14/2014 00:43:14</publishTime>
+    </File>
+    <File Include="images/content/article50.jpg">
+      <publishTime>12/14/2014 00:43:14</publishTime>
+    </File>
+    <File Include="images/content/article6.jpg">
+      <publishTime>12/14/2014 00:43:14</publishTime>
+    </File>
+    <File Include="images/content/article7.jpg">
+      <publishTime>12/14/2014 00:43:14</publishTime>
+    </File>
+    <File Include="images/content/article8.jpg">
+      <publishTime>12/14/2014 00:43:14</publishTime>
+    </File>
+    <File Include="images/content/article9.jpg">
+      <publishTime>12/14/2014 00:43:14</publishTime>
+    </File>
+    <File Include="images/content/big/article1.jpg">
+      <publishTime>12/14/2014 23:06:29</publishTime>
+    </File>
+    <File Include="images/content/big/article10.jpg">
+      <publishTime>12/14/2014 23:06:29</publishTime>
+    </File>
+    <File Include="images/content/big/article11.jpg">
+      <publishTime>12/14/2014 23:06:29</publishTime>
+    </File>
+    <File Include="images/content/big/article12.jpg">
+      <publishTime>12/14/2014 23:06:29</publishTime>
+    </File>
+    <File Include="images/content/big/article13.jpg">
+      <publishTime>12/14/2014 23:06:29</publishTime>
+    </File>
+    <File Include="images/content/big/article14.jpg">
+      <publishTime>12/14/2014 23:06:29</publishTime>
+    </File>
+    <File Include="images/content/big/article15.jpg">
+      <publishTime>12/14/2014 23:06:29</publishTime>
+    </File>
+    <File Include="images/content/big/article15_1.jpg">
+      <publishTime>12/14/2014 23:06:29</publishTime>
+    </File>
+    <File Include="images/content/big/article16.jpg">
+      <publishTime>12/14/2014 23:06:29</publishTime>
+    </File>
+    <File Include="images/content/big/article17.jpg">
+      <publishTime>12/14/2014 23:06:29</publishTime>
+    </File>
+    <File Include="images/content/big/article18.jpg">
+      <publishTime>12/14/2014 23:06:29</publishTime>
+    </File>
+    <File Include="images/content/big/article2.jpg">
+      <publishTime>12/14/2014 23:06:29</publishTime>
+    </File>
+    <File Include="images/content/big/article20.jpg">
+      <publishTime>12/14/2014 23:06:29</publishTime>
+    </File>
+    <File Include="images/content/big/article21.jpg">
+      <publishTime>12/14/2014 23:06:29</publishTime>
+    </File>
+    <File Include="images/content/big/article22.jpg">
+      <publishTime>12/14/2014 23:06:29</publishTime>
+    </File>
+    <File Include="images/content/big/article23.jpg">
+      <publishTime>12/14/2014 23:06:29</publishTime>
+    </File>
+    <File Include="images/content/big/article24.jpg">
+      <publishTime>12/14/2014 23:06:29</publishTime>
+    </File>
+    <File Include="images/content/big/article25.jpg">
+      <publishTime>12/14/2014 23:06:29</publishTime>
+    </File>
+    <File Include="images/content/big/article26.jpg">
+      <publishTime>12/14/2014 23:06:29</publishTime>
+    </File>
+    <File Include="images/content/big/article27.jpg">
+      <publishTime>12/14/2014 23:06:29</publishTime>
+    </File>
+    <File Include="images/content/big/article28.jpg">
+      <publishTime>12/14/2014 23:06:29</publishTime>
+    </File>
+    <File Include="images/content/big/article29.jpg">
+      <publishTime>12/14/2014 23:06:29</publishTime>
+    </File>
+    <File Include="images/content/big/article29_1.jpg">
+      <publishTime>12/14/2014 23:06:29</publishTime>
+    </File>
+    <File Include="images/content/big/article29_2.jpg">
+      <publishTime>12/14/2014 23:06:29</publishTime>
+    </File>
+    <File Include="images/content/big/article3.jpg">
+      <publishTime>12/14/2014 23:06:29</publishTime>
+    </File>
+    <File Include="images/content/big/article30.jpg">
+      <publishTime>12/14/2014 23:06:29</publishTime>
+    </File>
+    <File Include="images/content/big/article31.jpg">
+      <publishTime>12/14/2014 23:06:29</publishTime>
+    </File>
+    <File Include="images/content/big/article32.jpg">
+      <publishTime>12/14/2014 23:06:29</publishTime>
+    </File>
+    <File Include="images/content/big/article33.jpg">
+      <publishTime>12/14/2014 23:06:29</publishTime>
+    </File>
+    <File Include="images/content/big/article34.jpg">
+      <publishTime>12/14/2014 23:06:29</publishTime>
+    </File>
+    <File Include="images/content/big/article35.jpg">
+      <publishTime>12/14/2014 23:06:29</publishTime>
+    </File>
+    <File Include="images/content/big/article37.jpg">
+      <publishTime>12/14/2014 23:06:29</publishTime>
+    </File>
+    <File Include="images/content/big/article38.jpg">
+      <publishTime>12/14/2014 23:06:29</publishTime>
+    </File>
+    <File Include="images/content/big/article39.jpg">
+      <publishTime>12/14/2014 23:06:29</publishTime>
+    </File>
+    <File Include="images/content/big/article4.jpg">
+      <publishTime>12/14/2014 23:06:29</publishTime>
+    </File>
+    <File Include="images/content/big/article41.jpg">
+      <publishTime>12/14/2014 23:06:29</publishTime>
+    </File>
+    <File Include="images/content/big/article42.jpg">
+      <publishTime>12/14/2014 23:06:29</publishTime>
+    </File>
+    <File Include="images/content/big/article43.jpg">
+      <publishTime>12/14/2014 23:06:29</publishTime>
+    </File>
+    <File Include="images/content/big/article44.jpg">
+      <publishTime>12/14/2014 23:06:29</publishTime>
+    </File>
+    <File Include="images/content/big/article45.jpg">
+      <publishTime>12/14/2014 23:06:29</publishTime>
+    </File>
+    <File Include="images/content/big/article46.jpg">
+      <publishTime>12/14/2014 23:06:30</publishTime>
+    </File>
+    <File Include="images/content/big/article47.jpg">
+      <publishTime>12/15/2014 00:39:10</publishTime>
+    </File>
+    <File Include="images/content/big/article48.jpg">
+      <publishTime>12/14/2014 23:06:30</publishTime>
+    </File>
+    <File Include="images/content/big/article49.jpg">
+      <publishTime>12/14/2014 23:06:30</publishTime>
+    </File>
+    <File Include="images/content/big/article5.jpg">
+      <publishTime>12/14/2014 23:06:30</publishTime>
+    </File>
+    <File Include="images/content/big/article50.jpg">
+      <publishTime>12/14/2014 23:06:30</publishTime>
+    </File>
+    <File Include="images/content/big/article6.jpg">
+      <publishTime>12/14/2014 23:06:30</publishTime>
+    </File>
+    <File Include="images/content/big/article7.jpg">
+      <publishTime>12/14/2014 23:06:30</publishTime>
+    </File>
+    <File Include="images/content/big/article8.jpg">
+      <publishTime>12/14/2014 23:06:30</publishTime>
+    </File>
+    <File Include="images/content/big/article9.jpg">
+      <publishTime>12/14/2014 23:06:30</publishTime>
+    </File>
+    <File Include="images/content/placeholder.png">
+      <publishTime>12/11/2014 13:19:31</publishTime>
+    </File>
+    <File Include="images/curly.jpg">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/curly.png">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/curly_hover.png">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/curly_select.png">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/desc.jpg">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/detay.png">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/detay2.png">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/detay2_hover.png">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/detay_hover.png">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/devam.jpg">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/devam.png">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/devam_hover.png">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/dummy.jpg">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/dummy01.jpg">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/dummy02.jpg">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/duygu.jpg">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/facebook.png">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/facebook_dark.png">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/facebook_dark_hover.png">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/facebook_gray.png">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/facebook_gray2.png">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/facebook_gray2_hover.png">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/facebook_gray_hover.png">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/facebook_icon.png">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/fbAdayiniSec.jpg">
+      <publishTime>12/15/2014 01:52:00</publishTime>
+    </File>
+    <File Include="images/fb_gray.png">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/footer_instagram.jpg">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/footer_logo.jpg">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/holder.jpg">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/iconjane kopya.jpg">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/iconjane.jpg">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/instagram.png">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/instagram_gray.png">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/instagram_gray_hover.png">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/jennifer_lopez.jpg">
+      <publishTime>12/14/2014 01:28:00</publishTime>
+    </File>
+    <File Include="images/kahverengi.jpg">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/kahverengi.png">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/kahverengi_hover.png">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/kahverengi_select.png">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/keira.jpg">
+      <publishTime>12/14/2014 01:50:32</publishTime>
+    </File>
+    <File Include="images/kisa.jpg">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/kisa.png">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/kisa_hover.png">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/kizil.jpg">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/kizil.png">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/kizil_hover.png">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/kizil_select.png">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/loading.gif">
+      <publishTime>12/13/2014 19:16:16</publishTime>
+    </File>
+    <File Include="images/menu_img01.png">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/menu_img02.png">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/moda_img01.jpg">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/moda_img02.jpg">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/moda_img_blank.png">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/noImage.jpg">
+      <publishTime>12/15/2014 01:14:51</publishTime>
+    </File>
+    <File Include="images/ok.png">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/orta.jpg">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/orta.png">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/orta_hover.png">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/ozlem.jpg">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/placeholder.png">
+      <publishTime>12/11/2014 13:19:32</publishTime>
+    </File>
+    <File Include="images/placeholder2.png">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/playBt.png">
+      <publishTime>12/13/2014 19:16:16</publishTime>
+    </File>
+    <File Include="images/populer01.jpg">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/p_bulutlu.png">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/recentsTitle.jpg">
+      <publishTime>12/14/2014 00:48:50</publishTime>
+    </File>
+    <File Include="images/saclarimla_gucluyum.png">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/sac_stilleri/01.jpg">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/sac_stilleri/02.jpg">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/sac_stilleri/03.jpg">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/sac_stilleri/04.jpg">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/sac_stilleri/05.jpg">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/sac_stilleri/06.jpg">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/sac_stilleri/07.jpg">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/sac_stilleri/08.jpg">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/sac_stilleri/09.jpg">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/sac_stilleri/10.jpg">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/sac_stilleri/11.jpg">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/sari.jpg">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/sari.png">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/sari_hover.png">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/sari_select.png">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/sena_b.jpg">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/sende_sor.jpg">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/sende_sor.png">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/sende_sor2.png">
+      <publishTime>12/11/2014 21:49:55</publishTime>
+    </File>
+    <File Include="images/sende_sor2_hover.png">
+      <publishTime>12/11/2014 21:49:55</publishTime>
+    </File>
+    <File Include="images/sende_sor_hover.png">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/shareLogo.jpg">
+      <publishTime>12/07/2014 21:09:33</publishTime>
+    </File>
+    <File Include="images/sidebar_banner.jpg">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/side_news.jpg">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/side_news_img.jpg">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/siyah.jpg">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/siyah.png">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/siyah_hover.png">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/siyah_select.png">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/slide01.jpg">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/slide02.jpg">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/small_placeholder.png">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/star.png">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/star_hover.png">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/straight.jpg">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/straight.png">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/straight_hover.png">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/s_unlu_howto.jpg">
+      <publishTime>12/15/2014 01:54:16</publishTime>
+    </File>
+    <File Include="images/test.png">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/time.png">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/top_fb_icon.png">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/top_insta_icon.jpg">
+      <publishTime>12/13/2014 21:53:44</publishTime>
+    </File>
+    <File Include="images/top_tw_icon.png">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/top_youtube_icon.png">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/tumunu_gor.jpg">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/tumunu_gor.png">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/tumunu_gor_hover.png">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/tumunu_oku.png">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/tumunu_oku_bt.png">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/tumunu_oku_hover.png">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/tw2.png">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/twitter.png">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/twitter_dark.png">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/twitter_dark_hover.png">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/twitter_gray.png">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/twitter_gray2.png">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/twitter_gray2_hover.png">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/twitter_gray_hover.png">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/twitter_icon.png">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/tw_gray.png">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/uzman_blank.png">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/uzun.jpg">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/uzun.png">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/uzun_hover.png">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/videos/01.jpg">
+      <publishTime>12/13/2014 19:16:18</publishTime>
+    </File>
+    <File Include="images/wavy.jpg">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/wavy.png">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/wavy_hover.png">
+      <publishTime>12/07/2014 21:06:45</publishTime>
+    </File>
+    <File Include="images/weather/clear.png">
+      <publishTime>12/14/2014 22:30:22</publishTime>
+    </File>
+    <File Include="images/weather/cloudy-and-light-rain.png">
+      <publishTime>12/13/2014 21:32:30</publishTime>
+    </File>
+    <File Include="images/weather/cloudy-and-showers.png">
+      <publishTime>12/13/2014 21:32:45</publishTime>
+    </File>
+    <File Include="images/weather/cloudy.png">
+      <publishTime>12/13/2014 23:26:22</publishTime>
+    </File>
+    <File Include="images/weather/mostly-clear.png">
+      <publishTime>12/13/2014 21:30:55</publishTime>
+    </File>
+    <File Include="images/weather/mostly-cloudy.png">
+      <publishTime>12/13/2014 21:30:55</publishTime>
+    </File>
+    <File Include="images/weather/overcast-and-rain.png">
+      <publishTime>12/13/2014 23:28:04</publishTime>
+    </File>
+    <File Include="images/weather/overcast.png">
+      <publishTime>12/13/2014 23:30:08</publishTime>
+    </File>
+    <File Include="images/weather/partly-cloudy-and-showers.png">
+      <publishTime>12/13/2014 23:29:07</publishTime>
+    </File>
+    <File Include="images/weather/partly-cloudy.png">
+      <publishTime>12/13/2014 23:29:42</publishTime>
+    </File>
+    <File Include="images/weather/_bulutlu_firtina_yagmur.png">
+      <publishTime>12/13/2014 23:31:13</publishTime>
+    </File>
+    <File Include="images/weather/_bulutlu_hafif_kar.png">
+      <publishTime>12/13/2014 23:31:13</publishTime>
+    </File>
+    <File Include="images/weather/_bulutlu_hafif_yagisli.png">
+      <publishTime>12/13/2014 23:31:13</publishTime>
+    </File>
+    <File Include="images/weather/_hafif_kar.png">
+      <publishTime>12/13/2014 23:31:13</publishTime>
+    </File>
+    <File Include="images/weather/_karla_yagmur.png">
+      <publishTime>12/13/2014 23:31:13</publishTime>
+    </File>
+    <File Include="images/weather/_kar_yagisli.png">
+      <publishTime>12/13/2014 23:31:13</publishTime>
+    </File>
+    <File Include="images/weather/_parcali_bulutlu_firtina_yagmur.png">
+      <publishTime>12/13/2014 23:31:13</publishTime>
+    </File>
+    <File Include="images/weather/_parcali_bulutlu_hafifkar.png">
+      <publishTime>12/13/2014 23:31:13</publishTime>
+    </File>
+    <File Include="images/weather/_sisli.png">
+      <publishTime>12/13/2014 23:31:13</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>11/17/2014 23:35:00</publishTime>
+    </File>
+    <File Include="scripts/blank.gif">
+      <publishTime>12/07/2014 21:22:58</publishTime>
+    </File>
+    <File Include="scripts/browser-compatibility.js">
+      <publishTime>12/07/2014 21:22:38</publishTime>
+    </File>
+    <File Include="scripts/global.js">
+      <publishTime>12/15/2014 03:42:11</publishTime>
+    </File>
+    <File Include="scripts/html5.min.js">
+      <publishTime>12/07/2014 21:22:14</publishTime>
+    </File>
+    <File Include="scripts/ie.js">
+      <publishTime>11/17/2014 23:36:02</publishTime>
+    </File>
+    <File Include="scripts/init.js">
+      <publishTime>11/17/2014 23:36:02</publishTime>
+    </File>
+    <File Include="scripts/jquery-1.10.2.min.js">
+      <publishTime>12/07/2014 21:05:11</publishTime>
+    </File>
+    <File Include="scripts/jquery.easing.min.js">
+      <publishTime>12/07/2014 21:05:11</publishTime>
+    </File>
+    <File Include="scripts/jquery.isotope.js">
+      <publishTime>12/07/2014 21:23:06</publishTime>
+    </File>
+    <File Include="scripts/jquery.validate.min.js">
+      <publishTime>12/11/2014 13:18:16</publishTime>
+    </File>
+    <File Include="scripts/jquery.validate.unobtrusive.min.js">
+      <publishTime>12/15/2014 03:44:13</publishTime>
+    </File>
+    <File Include="scripts/list.min.js">
+      <publishTime>12/07/2014 21:23:51</publishTime>
+    </File>
+    <File Include="scripts/masterslider/blank.gif">
+      <publishTime>12/07/2014 21:05:39</publishTime>
+    </File>
+    <File Include="scripts/masterslider/skins/black-1/black-skin-1-retina.png">
+      <publishTime>12/07/2014 21:05:39</publishTime>
+    </File>
+    <File Include="scripts/masterslider/skins/black-1/black-skin-1.png">
+      <publishTime>12/07/2014 21:05:39</publishTime>
+    </File>
+    <File Include="scripts/masterslider/skins/black-1/style.css">
+      <publishTime>12/07/2014 21:05:39</publishTime>
+    </File>
+    <File Include="scripts/masterslider/skins/black-2/black-skin-2-retina.png">
+      <publishTime>12/07/2014 21:05:39</publishTime>
+    </File>
+    <File Include="scripts/masterslider/skins/black-2/black-skin-2.png">
+      <publishTime>12/07/2014 21:05:39</publishTime>
+    </File>
+    <File Include="scripts/masterslider/skins/black-2/style.css">
+      <publishTime>12/07/2014 21:05:39</publishTime>
+    </File>
+    <File Include="scripts/masterslider/skins/contrast/contrast-skin-retina.png">
+      <publishTime>12/07/2014 21:05:39</publishTime>
+    </File>
+    <File Include="scripts/masterslider/skins/contrast/contrast-skin.png">
+      <publishTime>12/07/2014 21:05:39</publishTime>
+    </File>
+    <File Include="scripts/masterslider/skins/contrast/style.css">
+      <publishTime>12/07/2014 21:05:39</publishTime>
+    </File>
+    <File Include="scripts/masterslider/skins/default/light-skin-1 kopya.png">
+      <publishTime>12/07/2014 21:05:39</publishTime>
+    </File>
+    <File Include="scripts/masterslider/skins/default/light-skin-1-retina.png">
+      <publishTime>12/07/2014 21:05:39</publishTime>
+    </File>
+    <File Include="scripts/masterslider/skins/default/light-skin-1.png">
+      <publishTime>12/07/2014 21:05:39</publishTime>
+    </File>
+    <File Include="scripts/masterslider/skins/default/style-ie.css">
+      <publishTime>12/07/2014 21:05:39</publishTime>
+    </File>
+    <File Include="scripts/masterslider/skins/default/style.css">
+      <publishTime>12/07/2014 21:05:39</publishTime>
+    </File>
+    <File Include="scripts/masterslider/skins/light-2/light-skin-2-retina.png">
+      <publishTime>12/07/2014 21:05:39</publishTime>
+    </File>
+    <File Include="scripts/masterslider/skins/light-2/light-skin-2.png">
+      <publishTime>12/07/2014 21:05:39</publishTime>
+    </File>
+    <File Include="scripts/masterslider/skins/light-2/style.css">
+      <publishTime>12/07/2014 21:05:39</publishTime>
+    </File>
+    <File Include="scripts/masterslider/skins/light-3/light-skin-3-retina.png">
+      <publishTime>12/07/2014 21:05:39</publishTime>
+    </File>
+    <File Include="scripts/masterslider/skins/light-3/light-skin-3.png">
+      <publishTime>12/07/2014 21:05:39</publishTime>
+    </File>
+    <File Include="scripts/masterslider/skins/light-3/style.css">
+      <publishTime>12/07/2014 21:05:39</publishTime>
+    </File>
+    <File Include="scripts/masterslider/skins/light-4/light-skin-4-retina.png">
+      <publishTime>12/07/2014 21:05:39</publishTime>
+    </File>
+    <File Include="scripts/masterslider/skins/light-4/light-skin-4.png">
+      <publishTime>12/07/2014 21:05:39</publishTime>
+    </File>
+    <File Include="scripts/masterslider/skins/light-4/style.css">
+      <publishTime>12/07/2014 21:05:39</publishTime>
+    </File>
+    <File Include="scripts/masterslider/skins/light-5/light-skin-5-retina.png">
+      <publishTime>12/07/2014 21:05:39</publishTime>
+    </File>
+    <File Include="scripts/masterslider/skins/light-5/light-skin-5.png">
+      <publishTime>12/07/2014 21:05:39</publishTime>
+    </File>
+    <File Include="scripts/masterslider/skins/light-5/style.css">
+      <publishTime>12/07/2014 21:05:39</publishTime>
+    </File>
+    <File Include="scripts/masterslider/skins/light-6/light-skin-6-retina.png">
+      <publishTime>12/07/2014 21:05:39</publishTime>
+    </File>
+    <File Include="scripts/masterslider/skins/light-6/light-skin-6.png">
+      <publishTime>12/07/2014 21:05:39</publishTime>
+    </File>
+    <File Include="scripts/masterslider/skins/light-6/style.css">
+      <publishTime>12/07/2014 21:05:39</publishTime>
+    </File>
+    <File Include="scripts/masterslider/skins/metro/metro-skin-retina.png">
+      <publishTime>12/07/2014 21:05:39</publishTime>
+    </File>
+    <File Include="scripts/masterslider/skins/metro/metro-skin.png">
+      <publishTime>12/07/2014 21:05:39</publishTime>
+    </File>
+    <File Include="scripts/masterslider/skins/metro/style.css">
+      <publishTime>12/07/2014 21:05:39</publishTime>
+    </File>
+    <File Include="scripts/masterslider/slider.js">
+      <publishTime>12/07/2014 21:05:39</publishTime>
+    </File>
+    <File Include="scripts/masterslider/style/grab.cur">
+      <publishTime>12/07/2014 21:05:39</publishTime>
+    </File>
+    <File Include="scripts/masterslider/style/grab.png">
+      <publishTime>12/07/2014 21:05:39</publishTime>
+    </File>
+    <File Include="scripts/masterslider/style/grabbing.cur">
+      <publishTime>12/07/2014 21:05:39</publishTime>
+    </File>
+    <File Include="scripts/masterslider/style/grabbing.png">
+      <publishTime>12/07/2014 21:05:39</publishTime>
+    </File>
+    <File Include="scripts/masterslider/style/loading-1-dark.gif">
+      <publishTime>12/07/2014 21:05:39</publishTime>
+    </File>
+    <File Include="scripts/masterslider/style/loading-1-light.gif">
+      <publishTime>12/07/2014 21:05:39</publishTime>
+    </File>
+    <File Include="scripts/masterslider/style/loading-1.gif">
+      <publishTime>12/07/2014 21:05:39</publishTime>
+    </File>
+    <File Include="scripts/masterslider/style/loading-2-dark.gif">
+      <publishTime>12/07/2014 21:05:39</publishTime>
+    </File>
+    <File Include="scripts/masterslider/style/loading-2-light.gif">
+      <publishTime>12/07/2014 21:05:39</publishTime>
+    </File>
+    <File Include="scripts/masterslider/style/loading-2.gif">
+      <publishTime>12/07/2014 21:05:39</publishTime>
+    </File>
+    <File Include="scripts/masterslider/style/masterslider-ie.css">
+      <publishTime>12/07/2014 21:05:39</publishTime>
+    </File>
+    <File Include="scripts/masterslider/style/masterslider.css">
+      <publishTime>12/07/2014 21:05:39</publishTime>
+    </File>
+    <File Include="scripts/masterslider/style/video-close-btn.png">
+      <publishTime>12/07/2014 21:05:39</publishTime>
+    </File>
+    <File Include="stylesheets/font-awesome.min.css">
+      <publishTime>12/07/2014 21:11:53</publishTime>
+    </File>
+    <File Include="stylesheets/font.css">
+      <publishTime>12/07/2014 21:11:53</publishTime>
+    </File>
+    <File Include="stylesheets/fonts/fontawesome-webfont.eot">
+      <publishTime>12/07/2014 21:11:53</publishTime>
+    </File>
+    <File Include="stylesheets/fonts/fontawesome-webfont.svg">
+      <publishTime>12/07/2014 21:11:53</publishTime>
+    </File>
+    <File Include="stylesheets/fonts/fontawesome-webfont.ttf">
+      <publishTime>12/07/2014 21:11:53</publishTime>
+    </File>
+    <File Include="stylesheets/fonts/fontawesome-webfont.woff">
+      <publishTime>12/07/2014 21:11:53</publishTime>
+    </File>
+    <File Include="stylesheets/fonts/FontAwesome.otf">
+      <publishTime>12/07/2014 21:11:53</publishTime>
+    </File>
+    <File Include="stylesheets/fonts/proximanova-bold-webfont-webfont.eot">
+      <publishTime>12/07/2014 21:11:53</publishTime>
+    </File>
+    <File Include="stylesheets/fonts/proximanova-bold-webfont-webfont.svg">
+      <publishTime>12/07/2014 21:11:53</publishTime>
+    </File>
+    <File Include="stylesheets/fonts/proximanova-bold-webfont-webfont.ttf">
+      <publishTime>12/07/2014 21:11:53</publishTime>
+    </File>
+    <File Include="stylesheets/fonts/proximanova-bold-webfont-webfont.woff">
+      <publishTime>12/07/2014 21:11:53</publishTime>
+    </File>
+    <File Include="stylesheets/fonts/proximanova-bold-webfont-webfont.woff2">
+      <publishTime>12/07/2014 21:11:53</publishTime>
+    </File>
+    <File Include="stylesheets/fonts/proximanova-extrabold-webfont-webfont.eot">
+      <publishTime>12/07/2014 21:11:53</publishTime>
+    </File>
+    <File Include="stylesheets/fonts/proximanova-extrabold-webfont-webfont.svg">
+      <publishTime>12/07/2014 21:11:53</publishTime>
+    </File>
+    <File Include="stylesheets/fonts/proximanova-extrabold-webfont-webfont.ttf">
+      <publishTime>12/07/2014 21:11:53</publishTime>
+    </File>
+    <File Include="stylesheets/fonts/proximanova-extrabold-webfont-webfont.woff">
+      <publishTime>12/07/2014 21:11:53</publishTime>
+    </File>
+    <File Include="stylesheets/fonts/proximanova-extrabold-webfont-webfont.woff2">
+      <publishTime>12/07/2014 21:11:53</publishTime>
+    </File>
+    <File Include="stylesheets/fonts/proximanova-light-webfont-webfont.eot">
+      <publishTime>12/07/2014 21:11:53</publishTime>
+    </File>
+    <File Include="stylesheets/fonts/proximanova-light-webfont-webfont.svg">
+      <publishTime>12/07/2014 21:11:53</publishTime>
+    </File>
+    <File Include="stylesheets/fonts/proximanova-light-webfont-webfont.ttf">
+      <publishTime>12/07/2014 21:11:53</publishTime>
+    </File>
+    <File Include="stylesheets/fonts/proximanova-light-webfont-webfont.woff">
+      <publishTime>12/07/2014 21:11:53</publishTime>
+    </File>
+    <File Include="stylesheets/fonts/proximanova-light-webfont-webfont.woff2">
+      <publishTime>12/07/2014 21:11:53</publishTime>
+    </File>
+    <File Include="stylesheets/fonts/proximanova-regitalic-webfont-webfont.eot">
+      <publishTime>12/07/2014 21:11:53</publishTime>
+    </File>
+    <File Include="stylesheets/fonts/proximanova-regitalic-webfont-webfont.svg">
+      <publishTime>12/07/2014 21:11:53</publishTime>
+    </File>
+    <File Include="stylesheets/fonts/proximanova-regitalic-webfont-webfont.ttf">
+      <publishTime>12/07/2014 21:11:53</publishTime>
+    </File>
+    <File Include="stylesheets/fonts/proximanova-regitalic-webfont-webfont.woff">
+      <publishTime>12/07/2014 21:11:53</publishTime>
+    </File>
+    <File Include="stylesheets/fonts/proximanova-regitalic-webfont-webfont.woff2">
+      <publishTime>12/07/2014 21:11:53</publishTime>
+    </File>
+    <File Include="stylesheets/fonts/proximanova-regular-webfont-webfont.eot">
+      <publishTime>12/07/2014 21:11:53</publishTime>
+    </File>
+    <File Include="stylesheets/fonts/proximanova-regular-webfont-webfont.svg">
+      <publishTime>12/07/2014 21:11:53</publishTime>
+    </File>
+    <File Include="stylesheets/fonts/proximanova-regular-webfont-webfont.ttf">
+      <publishTime>12/07/2014 21:11:53</publishTime>
+    </File>
+    <File Include="stylesheets/fonts/proximanova-regular-webfont-webfont.woff">
+      <publishTime>12/07/2014 21:11:53</publishTime>
+    </File>
+    <File Include="stylesheets/fonts/proximanova-regular-webfont-webfont.woff2">
+      <publishTime>12/07/2014 21:11:53</publishTime>
+    </File>
+    <File Include="stylesheets/fonts/proximanova-semibold-webfont-webfont.eot">
+      <publishTime>12/07/2014 21:11:53</publishTime>
+    </File>
+    <File Include="stylesheets/fonts/proximanova-semibold-webfont-webfont.svg">
+      <publishTime>12/07/2014 21:11:53</publishTime>
+    </File>
+    <File Include="stylesheets/fonts/proximanova-semibold-webfont-webfont.ttf">
+      <publishTime>12/07/2014 21:11:53</publishTime>
+    </File>
+    <File Include="stylesheets/fonts/proximanova-semibold-webfont-webfont.woff">
+      <publishTime>12/07/2014 21:11:53</publishTime>
+    </File>
+    <File Include="stylesheets/fonts/proximanova-semibold-webfont-webfont.woff2">
+      <publishTime>12/07/2014 21:11:53</publishTime>
+    </File>
+    <File Include="stylesheets/fonts/proximanovacond-semibold-webfont-webfont.eot">
+      <publishTime>12/07/2014 21:11:53</publishTime>
+    </File>
+    <File Include="stylesheets/fonts/proximanovacond-semibold-webfont-webfont.svg">
+      <publishTime>12/07/2014 21:11:53</publishTime>
+    </File>
+    <File Include="stylesheets/fonts/proximanovacond-semibold-webfont-webfont.ttf">
+      <publishTime>12/07/2014 21:11:53</publishTime>
+    </File>
+    <File Include="stylesheets/fonts/proximanovacond-semibold-webfont-webfont.woff">
+      <publishTime>12/07/2014 21:11:53</publishTime>
+    </File>
+    <File Include="stylesheets/fonts/proximanovacond-semibold-webfont-webfont.woff2">
+      <publishTime>12/07/2014 21:11:53</publishTime>
+    </File>
+    <File Include="stylesheets/fonts/segoeuil-webfont-light-webfont.eot">
+      <publishTime>12/07/2014 21:11:53</publishTime>
+    </File>
+    <File Include="stylesheets/fonts/segoeuil-webfont-light-webfont.svg">
+      <publishTime>12/07/2014 21:11:53</publishTime>
+    </File>
+    <File Include="stylesheets/fonts/segoeuil-webfont-light-webfont.ttf">
+      <publishTime>12/07/2014 21:11:53</publishTime>
+    </File>
+    <File Include="stylesheets/fonts/segoeuil-webfont-light-webfont.woff">
+      <publishTime>12/07/2014 21:11:53</publishTime>
+    </File>
+    <File Include="stylesheets/fonts/segoeuil-webfont-light-webfont.woff2">
+      <publishTime>12/07/2014 21:11:53</publishTime>
+    </File>
+    <File Include="stylesheets/fonts/segoeuiz-webfont-bold-italic-webfont.eot">
+      <publishTime>12/07/2014 21:11:53</publishTime>
+    </File>
+    <File Include="stylesheets/fonts/segoeuiz-webfont-bold-italic-webfont.svg">
+      <publishTime>12/07/2014 21:11:53</publishTime>
+    </File>
+    <File Include="stylesheets/fonts/segoeuiz-webfont-bold-italic-webfont.ttf">
+      <publishTime>12/07/2014 21:11:53</publishTime>
+    </File>
+    <File Include="stylesheets/fonts/segoeuiz-webfont-bold-italic-webfont.woff">
+      <publishTime>12/07/2014 21:11:53</publishTime>
+    </File>
+    <File Include="stylesheets/fonts/segoeuiz-webfont-bold-italic-webfont.woff2">
+      <publishTime>12/07/2014 21:11:53</publishTime>
+    </File>
+    <File Include="stylesheets/fonts/seguisb-webfont-semi-bold-webfont.eot">
+      <publishTime>12/07/2014 21:11:53</publishTime>
+    </File>
+    <File Include="stylesheets/fonts/seguisb-webfont-semi-bold-webfont.svg">
+      <publishTime>12/07/2014 21:11:53</publishTime>
+    </File>
+    <File Include="stylesheets/fonts/seguisb-webfont-semi-bold-webfont.ttf">
+      <publishTime>12/07/2014 21:11:53</publishTime>
+    </File>
+    <File Include="stylesheets/fonts/seguisb-webfont-semi-bold-webfont.woff">
+      <publishTime>12/07/2014 21:11:53</publishTime>
+    </File>
+    <File Include="stylesheets/fonts/seguisb-webfont-semi-bold-webfont.woff2">
+      <publishTime>12/07/2014 21:11:53</publishTime>
+    </File>
+    <File Include="stylesheets/layout.css">
+      <publishTime>12/15/2014 04:26:05</publishTime>
+    </File>
+    <File Include="stylesheets/mega-menu.css">
+      <publishTime>12/14/2014 03:59:41</publishTime>
+    </File>
+    <File Include="stylesheets/ms-partialview.css">
+      <publishTime>12/14/2014 02:43:38</publishTime>
+    </File>
+    <File Include="stylesheets/reset.css">
+      <publishTime>12/07/2014 21:11:53</publishTime>
+    </File>
+    <File Include="Views/AskExpert/Form.cshtml">
+      <publishTime>12/15/2014 04:23:15</publishTime>
+    </File>
+    <File Include="Views/AskExpert/Index.cshtml">
+      <publishTime>12/15/2014 03:18:30</publishTime>
+    </File>
+    <File Include="Views/AskExpert/MainPart.cshtml">
+      <publishTime>12/14/2014 03:03:44</publishTime>
+    </File>
+    <File Include="Views/Category/Index.cshtml">
+      <publishTime>12/14/2014 22:54:18</publishTime>
+    </File>
+    <File Include="Views/Content/Detail.cshtml">
+      <publishTime>12/15/2014 01:03:26</publishTime>
+    </File>
+    <File Include="Views/Content/NextContent.cshtml">
+      <publishTime>12/14/2014 22:46:25</publishTime>
+    </File>
+    <File Include="Views/Content/Popular.cshtml">
+      <publishTime>12/14/2014 02:44:42</publishTime>
+    </File>
+    <File Include="Views/Content/Recents.cshtml">
+      <publishTime>12/14/2014 22:43:03</publishTime>
+    </File>
+    <File Include="Views/Home/HeroContents.cshtml">
+      <publishTime>12/14/2014 02:55:51</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>12/14/2014 03:18:08</publishTime>
+    </File>
+    <File Include="Views/Interview/MainPart.cshtml">
+      <publishTime>12/14/2014 02:58:25</publishTime>
+    </File>
+    <File Include="Views/Search/Index.cshtml">
+      <publishTime>12/15/2014 01:39:43</publishTime>
+    </File>
+    <File Include="Views/Shared/Facebook/Config.cshtml">
+      <publishTime>12/15/2014 00:31:54</publishTime>
+    </File>
+    <File Include="Views/Shared/Facebook/FbConnect.cshtml">
+      <publishTime>12/15/2014 01:44:32</publishTime>
+    </File>
+    <File Include="Views/Shared/Footer.cshtml">
+      <publishTime>12/13/2014 22:07:10</publishTime>
+    </File>
+    <File Include="Views/Shared/Header.cshtml">
+      <publishTime>12/13/2014 20:57:09</publishTime>
+    </File>
+    <File Include="Views/Shared/HeaderMegaMenu.cshtml">
+      <publishTime>12/15/2014 02:20:21</publishTime>
+    </File>
+    <File Include="Views/Shared/HeaderWeather.cshtml">
+      <publishTime>12/13/2014 21:54:51</publishTime>
+    </File>
+    <File Include="Views/Shared/PageControls/GA.cshtml">
+      <publishTime>12/07/2014 21:38:41</publishTime>
+    </File>
+    <File Include="Views/Shared/PageControls/JsGlobal.cshtml">
+      <publishTime>12/07/2014 22:38:59</publishTime>
+    </File>
+    <File Include="Views/Shared/PageControls/PageHead.cshtml">
+      <publishTime>12/10/2014 04:21:29</publishTime>
+    </File>
+    <File Include="Views/Shared/PageControls/PageMetaOg.cshtml">
+      <publishTime>12/10/2014 04:22:39</publishTime>
+    </File>
+    <File Include="Views/Shared/PageControls/PageScripts.cshtml">
+      <publishTime>12/13/2014 20:53:35</publishTime>
+    </File>
+    <File Include="Views/Shared/PageControls/PageStyles.cshtml">
+      <publishTime>12/07/2014 21:26:43</publishTime>
+    </File>
+    <File Include="Views/Shared/ScriptTemplate.cshtml">
+      <publishTime>11/17/2014 23:36:02</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>12/13/2014 21:50:27</publishTime>
+    </File>
+    <File Include="Views/StrongWomen/Index.cshtml">
+      <publishTime>12/15/2014 02:19:32</publishTime>
+    </File>
+    <File Include="Views/StrongWomen/MainPart.cshtml">
+      <publishTime>12/14/2014 03:49:48</publishTime>
+    </File>
+    <File Include="Views/Tips/Index.cshtml">
+      <publishTime>12/15/2014 00:53:48</publishTime>
+    </File>
+    <File Include="Views/Tips/MainPart.cshtml">
+      <publishTime>12/14/2014 03:18:01</publishTime>
+    </File>
+    <File Include="Views/Tips/TipList.cshtml">
+      <publishTime>12/15/2014 00:53:41</publishTime>
+    </File>
+    <File Include="Views/WatchAndTry/Index.cshtml">
+      <publishTime>12/15/2014 01:24:44</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>12/10/2014 01:36:42</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>11/17/2014 23:36:02</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>12/15/2014 04:28:14</publishTime>
+    </File>
+    <File Include="Web.config.live.Debug.xml">
+      <publishTime>12/15/2014 02:07:41</publishTime>
+    </File>
+    <File Include="Web.config.live.Release.xml">
+      <publishTime>12/15/2014 02:07:41</publishTime>
+    </File>
+    <File Include="Web.config.live.xml">
+      <publishTime>12/15/2014 02:11:21</publishTime>
+    </File>
+    <File Include="_static/facebook/fbGlobal.js">
+      <publishTime>12/11/2014 21:49:55</publishTime>
+    </File>
+    <File Include="_static/facebook/fbLogin.js">
+      <publishTime>12/11/2014 21:49:56</publishTime>
+    </File>
+    <File Include="_static/facebook/photoselector/csphotoselector.css">
+      <publishTime>11/17/2014 23:36:02</publishTime>
+    </File>
+    <File Include="_static/facebook/photoselector/csphotoselector.js">
+      <publishTime>11/17/2014 23:36:02</publishTime>
+    </File>
+    <File Include="_static/facebook/photoselector/csphotoselector/csphotoselector-pagination.png">
+      <publishTime>11/17/2014 23:36:02</publishTime>
+    </File>
+    <File Include="_static/facebook/photoselector/csphotoselector/loader.gif">
+      <publishTime>11/17/2014 23:36:02</publishTime>
+    </File>
+    <File Include="_static/facebook/photoselector/example.js">
+      <publishTime>11/17/2014 23:36:02</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

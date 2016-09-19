@@ -1,0 +1,50 @@
+﻿<script>
+    $(function () {
+
+        initInterviewSlider();
+
+    });
+
+    function initInterviewSlider() {
+        var sliderSoylesi = new MasterSlider();
+        //sliderSoylesi.control('arrows');
+        sliderSoylesi.control('slideinfo', { insertTo: "#partial-soylesi", autohide: false, align: 'bottom' });
+
+        sliderSoylesi.setup('soylesiSlide', {
+            width: 800,
+            height: 400,
+            space: 10,
+            loop: true,
+            view: 'fadeWave',
+
+        });
+    }
+
+</script>
+
+<div class="soylesi_area">
+    <div class="content_inner">
+        <h1 class="page_title">KEIRA KNIGHTLEY İLE SÖYLEŞİ</h1>
+
+        <div class="ms-partialview-template" id="partial-soylesi">
+            <!-- masterslider -->
+            <div class="master-slider ms-skin-default" id="soylesiSlide">
+                <a href="@PathHelper.ContentDetail(46, "keira-knightley-bob-kesimli-saclarina-yakin-markaj")" class="ms-slide">
+                    <img src="/scripts/masterslider/blank.gif" data-src="/images/keira.jpg" alt="" />
+                    <div class="ms-info">
+                        <h3>“Bob kesimli saçlarına yakın markaj”</h3>
+                        <p>
+                            Başarılı aktris Keira Knightley, güzelliğini minimal tarzıyla birleştirerek her daim asil bir görünümle karşımıza çıkıyor.
+                            Bu elegan tarzının bir parçası olarak sezonun hit modeli bob kesimi seçmiş.
+                            Açık kumral parlak saçlarına yumuşak dalgalar veren İngiliz oyuncu, kahverengi tonlarındaki göz makyajı ve dore elbisesiyle ten ve saç renklerini nasıl öne çıkaracağını iyi bildiğini kanıtlar gibi!
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <!-- end of masterslider -->
+        </div>
+        <div class="more_div">
+            <a class="devamiBt" href="@PathHelper.ContentDetail(46, "keira-knightley-bob-kesimli-saclarina-yakin-markaj")"></a>
+        </div>
+    </div>
+</div>

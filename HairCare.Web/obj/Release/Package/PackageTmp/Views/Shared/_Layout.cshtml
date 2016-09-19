@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+    <title>Saçlarımla Güçlüyüm</title>
+
+    @Html.Partial("PageControls/PageHead")
+
+    @RenderSection("PageMetaOg", false)
+
+    @Html.Partial("PageControls/PageStyles")
+    @Html.Partial("PageControls/JsGlobal")    
+    @Html.Partial("PageControls/PageScripts")      
+
+    @RenderSection("pageHead", false)
+    @RenderSection("scripts", false)
+
+    @Html.Partial("PageControls/GA")
+</head>
+<body>
+
+    <div class="main_wrapper">
+
+        @Html.Partial("Header")
+
+        @RenderBody()
+
+        @Html.Partial("Footer")
+
+    </div>
+
+</body>
+</html>

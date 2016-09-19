@@ -1,0 +1,9 @@
+D:\Projects\Loreal Maybelline Babylips\Babylips.DB\bin\Debug\Babylips.DB.dll.config
+D:\Projects\Loreal Maybelline Babylips\Babylips.DB\bin\Debug\Babylips.DB.dll
+D:\Projects\Loreal Maybelline Babylips\Babylips.DB\bin\Debug\Babylips.DB.pdb
+D:\Projects\Loreal Maybelline Babylips\Babylips.DB\bin\Debug\EntityFramework.dll
+D:\Projects\Loreal Maybelline Babylips\Babylips.DB\bin\Debug\EntityFramework.SqlServer.dll
+D:\Projects\Loreal Maybelline Babylips\Babylips.DB\bin\Debug\EntityFramework.xml
+D:\Projects\Loreal Maybelline Babylips\Babylips.DB\bin\Debug\EntityFramework.SqlServer.xml
+D:\Projects\Loreal Maybelline Babylips\Babylips.DB\obj\Debug\Babylips.DB.dll
+D:\Projects\Loreal Maybelline Babylips\Babylips.DB\obj\Debug\Babylips.DB.pdb

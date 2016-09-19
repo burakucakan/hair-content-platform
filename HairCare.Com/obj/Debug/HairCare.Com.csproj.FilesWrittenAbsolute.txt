@@ -1,0 +1,10 @@
+/Users/burak/Works/__Archive/Elseve Hair Care/WebProject/HairCare.Com/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/Users/burak/Works/__Archive/Elseve Hair Care/WebProject/HairCare.Com/bin/Debug/HairCare.Com.dll.mdb
+/Users/burak/Works/__Archive/Elseve Hair Care/WebProject/HairCare.Com/bin/Debug/HairCare.Com.dll
+/Users/burak/Works/__Archive/Elseve Hair Care/WebProject/HairCare.Com/obj/Debug/HairCare.Com.dll
+/Users/burak/Works/__Archive/Elseve Hair Care/WebProject/HairCare.Com/obj/Debug/HairCare.Com.dll.mdb
+/Users/burak/Works/__Archive/Elseve Hair Care/WebProject/HairCare.Com/bin/Debug/LIB.dll
+/Users/burak/Works/__Archive/Elseve Hair Care/WebProject/HairCare.Com/bin/Debug/LIB.dll.mdb
+/Users/burak/Works/__Archive/Elseve Hair Care/WebProject/HairCare.Com/bin/Debug/LIB.pdb
+/Users/burak/Works/__Archive/Elseve Hair Care/WebProject/HairCare.Com/bin/Debug/Newtonsoft.Json.dll
+/Users/burak/Works/__Archive/Elseve Hair Care/WebProject/HairCare.Com/bin/Debug/Newtonsoft.Json.xml

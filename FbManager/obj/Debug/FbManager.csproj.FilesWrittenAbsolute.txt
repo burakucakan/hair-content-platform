@@ -1,0 +1,9 @@
+/Users/burak/Works/__Archive/Elseve Hair Care/WebProject/FbManager/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/Users/burak/Works/__Archive/Elseve Hair Care/WebProject/FbManager/bin/Debug/FbManager.dll.mdb
+/Users/burak/Works/__Archive/Elseve Hair Care/WebProject/FbManager/bin/Debug/FbManager.dll
+/Users/burak/Works/__Archive/Elseve Hair Care/WebProject/FbManager/obj/Debug/FbManager.dll
+/Users/burak/Works/__Archive/Elseve Hair Care/WebProject/FbManager/obj/Debug/FbManager.dll.mdb
+/Users/burak/Works/__Archive/Elseve Hair Care/WebProject/FbManager/bin/Debug/Newtonsoft.Json.dll
+/Users/burak/Works/__Archive/Elseve Hair Care/WebProject/FbManager/bin/Debug/LIB.dll
+/Users/burak/Works/__Archive/Elseve Hair Care/WebProject/FbManager/bin/Debug/LIB.dll.mdb
+/Users/burak/Works/__Archive/Elseve Hair Care/WebProject/FbManager/bin/Debug/LIB.pdb

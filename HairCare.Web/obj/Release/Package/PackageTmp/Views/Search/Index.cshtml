@@ -1,0 +1,71 @@
+﻿@model IEnumerable<HairCare.DB.Content>
+
+@section scripts {
+    <script>
+
+        $(function () {
+
+            loadPopularContent();
+
+        })
+
+        function loadPopularContent() {
+            var _popularPath = '/Content/Popular';
+            $('.populer_area').load(_popularPath);
+        }
+
+    </script>
+}
+
+
+<div class="subpage_area">
+    <div class="content_inner">
+        <h1 class="page_title">ARMA SONUÇLARI</h1>
+
+        @if (Model == null || Model.Count() <= 0)
+        {
+            <text><center><p class="paragraph">Aradığınız kriterlere uygun içerik bulunamamaktadır!</p></center></text>
+        }
+        else
+        {
+            <text><center><p class="paragraph"><strong>"@ViewBag.q.ToString()"</strong> ile ilgili içerikler listelenmiştir.</p></center></text>
+            <br /><br />
+            foreach (var item in Model.ToList())
+            {
+                <div class="page_content" data-href="@PathHelper.ContentDetail(item.Id, item.Title)">
+                    <div class="bakim_img_frame">
+                        <img src="~/images/content/@item.Image" class="bakim_img" />
+                    </div>
+                    <div class="bakim_content">
+                        <div class="article_bakim_unit_wrapper">
+                            <div class="article_bakim">
+
+                                <div class="category-item">
+
+                                    <h2>@item.Title</h2>
+                                    <a class="detailLink" href="@PathHelper.ContentDetail(item.Id, item.Title)">
+                                        @Html.Raw(item.Header)
+                                    </a>
+                                </div>
+                                <div class="article_bakim_bottom">
+                                    <div class="icons_wrapper">
+                                        <div class="fix_width">
+                                            <p class="bottomTxt">@item.ViewDate</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+    </div>
+
+    <div class="populer_area"></div>
+
+    @{ Html.RenderAction("MainPart", "AskExpert"); }
+
+
+</div>

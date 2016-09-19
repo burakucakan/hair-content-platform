@@ -1,0 +1,17 @@
+D:\Projects\Loreal Hair Care\WebProject\HairCare.Service\bin\Release\HairCare.Service.dll
+D:\Projects\Loreal Hair Care\WebProject\HairCare.Service\bin\Release\HairCare.Service.pdb
+D:\Projects\Loreal Hair Care\WebProject\HairCare.Service\bin\Release\EntityFramework.dll
+D:\Projects\Loreal Hair Care\WebProject\HairCare.Service\bin\Release\FbManager.dll
+D:\Projects\Loreal Hair Care\WebProject\HairCare.Service\bin\Release\HairCare.Com.dll
+D:\Projects\Loreal Hair Care\WebProject\HairCare.Service\bin\Release\HairCare.DB.dll
+D:\Projects\Loreal Hair Care\WebProject\HairCare.Service\bin\Release\LIB.dll
+D:\Projects\Loreal Hair Care\WebProject\HairCare.Service\bin\Release\Newtonsoft.Json.dll
+D:\Projects\Loreal Hair Care\WebProject\HairCare.Service\bin\Release\HairCare.Com.pdb
+D:\Projects\Loreal Hair Care\WebProject\HairCare.Service\bin\Release\HairCare.DB.pdb
+D:\Projects\Loreal Hair Care\WebProject\HairCare.Service\bin\Release\FbManager.pdb
+D:\Projects\Loreal Hair Care\WebProject\HairCare.Service\bin\Release\LIB.pdb
+D:\Projects\Loreal Hair Care\WebProject\HairCare.Service\bin\Release\EntityFramework.xml
+D:\Projects\Loreal Hair Care\WebProject\HairCare.Service\bin\Release\Newtonsoft.Json.xml
+D:\Projects\Loreal Hair Care\WebProject\HairCare.Service\obj\Release\HairCare.Service.csprojResolveAssemblyReference.cache
+D:\Projects\Loreal Hair Care\WebProject\HairCare.Service\obj\Release\HairCare.Service.dll
+D:\Projects\Loreal Hair Care\WebProject\HairCare.Service\obj\Release\HairCare.Service.pdb

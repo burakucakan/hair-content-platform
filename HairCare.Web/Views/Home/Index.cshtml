@@ -1,0 +1,129 @@
+﻿@section PageMetaOg {
+    
+    @Html.Partial("PageControls/PageMetaOg")
+}
+
+
+@Html.Action("HeroContents", "Home")
+
+<div class="one_col_banner_area">
+    <div class="content_inner">
+        <div class="banner_one">
+            <div class="banner_one_content_unit_wrapper">
+                <div class="banner_one_content">
+                    <h2 class="banner_one_desc_title">BANYO&nbsp;</h2>
+                    <h2 class="banner_one_desc_title">RİTÜELİ</h2>
+                    <p class="banner_one_desc">Ruh ve bedenin bütünleşerek içten gelen güzellikle buluştuğu tapınak...</p> <a class="detayBt" href="/sac-bakimi/banyo-ritueli" target="_self"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@{Html.RenderAction("Recents", "Content");}
+
+@{Html.RenderAction("MainPart", "Interview");}
+
+
+<div class="populer_area"></div>
+<script>
+    $(document).ready(function () {
+        var _popularPath = '/Content/Popular';
+        $('.populer_area').load(_popularPath);        
+    });
+</script>
+
+@{ Html.RenderAction("MainPart", "AskExpert"); }
+
+@*<div class="stil_oneri_area">
+    <div class="content_inner">
+
+        <div data-foo="bar" id="container">
+            <div id="filterNav" class="item stamp">
+                <div id="filters">
+                    <div class="stilFilter">
+                        <div class="stil_title">
+                            <h1 id="reset" style="cursor:pointer">
+                                saç stil
+                                önerileri
+                            </h1>
+
+                        </div>
+                        <div class="tipi">
+                            <h2>SAÇ TİPİ</h2>
+                            <div style="text-align:center">
+                                <input type="checkbox" class="radio" name="grp[1][]" value=".straight" id="straight">
+                                <label for="straight"></label>
+                                <input type="checkbox" class="radio" name="grp[1][]" value=".curly" id="curly">
+                                <label for="curly"></label>
+                                <input type="checkbox" class="radio" name="grp[1][]" value=".wavy" id="wavy">
+                                <label for="wavy"></label>
+                            </div>
+                        </div>
+                        <div class="uzunlugu">
+                            <h2>UZUNLUĞU</h2>
+                            <div style="text-align:center">
+                                <input type="checkbox" class="radio" name="grp[2][]" value=".kisa" id="kisa">
+                                <label for="kisa"></label>
+                                <input type="checkbox" class="radio" name="grp[2][]" value=".orta" id="orta">
+                                <label for="orta"></label>
+                                <input type="checkbox" class="radio" name="grp[2][]" value=".uzun" id="uzun">
+                                <label for="uzun"></label>
+                            </div>
+                        </div>
+                        <div class="rengi">
+                            <h2>RENGİ</h2>
+                            <div style="text-align:center">
+                                <input type="checkbox" class="radio" name="grp[3][]" value=".siyah" id="siyah">
+                                <label for="siyah"></label>
+                                <input type="checkbox" class="radio" name="grp[3][]" value=".kahverengi" id="kahverengi">
+                                <label for="kahverengi"></label>
+                                <input type="checkbox" class="radio" name="grp[3][]" value=".kizil" id="kizil">
+                                <label for="kizil"></label>
+                                <input type="checkbox" class="radio" name="grp[3][]" value=".sari" id="sari">
+                                <label for="sari"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item straight">
+                <img src="/images/sac_stilleri/01.jpg" />
+            </div>
+            <div class="item curly">
+                <img src="/images/sac_stilleri/02.jpg" />
+            </div>
+            <div class="item wavy">
+                <img src="/images/sac_stilleri/03.jpg" />
+            </div>
+            <div class="item kisa">
+                <img src="/images/sac_stilleri/04.jpg" />
+            </div>
+            <div class="item orta">
+                <img src="/images/sac_stilleri/05.jpg" />
+            </div>
+            <div class="item uzun">
+                <img src="/images/sac_stilleri/06.jpg" />
+            </div>
+            <div class="item siyah">
+                <img src="/images/sac_stilleri/07.jpg" />
+            </div>
+            <div class="item kahverengi">
+                <img src="/images/sac_stilleri/08.jpg" />
+            </div>
+            <div class="item kizil">
+                <img src="/images/sac_stilleri/09.jpg" />
+            </div>
+            <div class="item sari">
+                <img src="/images/sac_stilleri/10.jpg" />
+            </div>
+        </div>
+
+
+    </div>
+</div>*@
+
+@{Html.RenderAction("MainPart", "Tips");}
+
+@{Html.RenderAction("MainPart", "StrongWomen");}
+

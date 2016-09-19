@@ -1,0 +1,9 @@
+D:\Projects\Loreal Hair Care\WebProject\FbManager\bin\Release\FbManager.dll
+D:\Projects\Loreal Hair Care\WebProject\FbManager\bin\Release\FbManager.pdb
+D:\Projects\Loreal Hair Care\WebProject\FbManager\bin\Release\LIB.dll
+D:\Projects\Loreal Hair Care\WebProject\FbManager\bin\Release\Newtonsoft.Json.dll
+D:\Projects\Loreal Hair Care\WebProject\FbManager\bin\Release\LIB.pdb
+D:\Projects\Loreal Hair Care\WebProject\FbManager\bin\Release\Newtonsoft.Json.xml
+D:\Projects\Loreal Hair Care\WebProject\FbManager\obj\Release\FbManager.csprojResolveAssemblyReference.cache
+D:\Projects\Loreal Hair Care\WebProject\FbManager\obj\Release\FbManager.dll
+D:\Projects\Loreal Hair Care\WebProject\FbManager\obj\Release\FbManager.pdb

@@ -1,0 +1,70 @@
+﻿@model IEnumerable<HairCare.DB.AskExpert>
+
+@section scripts {
+
+    <script>
+
+        $(function () {
+
+            $('.question').on("click", function () {
+                $(this).next(".answer").slideToggle('slow');
+            })
+
+        });
+
+    </script>
+
+}
+
+<div class="subpage_area">
+    <div class="content_inner">
+        <div class="uzmanBannerWrapper">
+            <div class="uzmanLeftArea">
+                <div class="uzmanImgFrame">
+                    <div class="uzmanImgAndTitle">
+                        <div class="uzmanImg">
+                            <img src="/images/uzman_blank.png" alt="" />
+                        </div>
+                        <div class="_uzmanTitle">
+                            <h2>CRISTOPHE ROBIN</h2>
+                            <p>EKPERT - L'OREAL PARIS</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="uzmanRightArea">
+                <div class="uzmanSoruContent">
+                    <h1 class="uzmana_sor_titile">UZMANA SOR</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit, tellus sed pellentesque iaculis, ipsum nisl auctor nibh.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="uzamanContArea">
+        <div class="content_inner">
+            
+            @foreach (HairCare.DB.AskExpert question in Model)
+            {
+                <div class="expert-box">
+
+                    
+                    <a class="question" href="javascript:;">
+                        @question.Question
+                        <div class="sender">@question.SenderFullName</div>
+                    </a>                           
+
+                    <div class="answer">
+                        <p class="answerDetail">@question.Answer</p>
+                        <p class="answerExpert">Christophe Robin</p>
+                    </div>
+
+                </div>
+            }
+        </div>
+
+        <div class="uzman-footer">
+            <a class="sendeSor2Bt" href="/uzmana-sor/soru-sor">sen de sor</a>
+        </div>
+    </div>
+
+</div>

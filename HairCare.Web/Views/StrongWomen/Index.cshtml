@@ -1,0 +1,87 @@
+﻿@model IEnumerable<HairCare.DB.GetCombinedPhotoList_Result>
+
+@section scripts {
+
+    @Html.Partial("Facebook/Config")
+
+    <script src="~/_static/facebook/fbGlobal.js"></script>
+    <script src="~/_static/facebook/fbLogin.js"></script>
+
+    <script>
+
+        $(function () {
+            SearchWomen();
+        })
+
+
+        function SearchWomen() {
+            $('#searchWomen').keyup(function () {
+                $.each($('.adaybox'), function (index, value) {
+                    if ($(this).find('.aday_isim').text().toLowerCase().indexOf($('#searchWomen').val().toLocaleLowerCase()) > -1 || $(this).find('.aday_gos_isim').text().toLowerCase().indexOf($('#searchWomen').val().toLocaleLowerCase()) > -1)
+                        $(this).parent().show();
+                    else $(this).parent().hide();
+                });
+            });
+        }
+    </script>
+}
+
+
+
+<div class="subpage_area">
+    <div class="content_inner">
+        <div class="s_unlu">
+            <h1 class="page_title">SAÇLARIYLA ÜNLÜLER</h1>
+            <p class="motto"> “ÇÜNKÜ SAÇLARIYLA GÜÇLÜ!”</p>
+            <p class="s_unlu_desc">
+                Onlar saçlarıyla ünlüler, çünkü herkesin imrendiği güçlü saçlara sahipler…
+                Peki senin saçlarıyla ünlü arkadaşın kim? Kararını ver, adayını göster;
+                hem arkadaşınla birlikte L’Oréal Elseve’in dijital yüzü olun hem de iPhone 6 kazanın!
+            </p>
+            <div class="howtoImg">
+
+                <a href="javascript:;" id="fbBtnLogin" class="s_unlu_aday_sec" data-ga="fb-aday-sec">FACEBOOK İLE BAĞLAN</a>
+
+            </div>
+        </div>
+        <div class="aday_search">
+
+            <input id="searchWomen" name="aday-search" type="search" placeholder="Ad Soyad ya da Kullanıcı Adı ile ara..." />
+                  
+        </div>
+
+        <div class="adaylar">
+            <ul class="rig columns-3">
+@foreach (HairCare.DB.GetCombinedPhotoList_Result photo in Model)
+{                <li>
+                    <div class="adaybox">
+                        <div class="aday_isim"><p>@photo.NomineeName<p></div>
+                        <div class="adayImg"> <img src="@photo.PictureUrl" width="375" height="375" onerror="$(this).parent().parent().parent().remove();" /> </div>
+                        <div class="aday_gosteren">
+                            <div class="aday_gosteren_img">
+                                <div class="circle" style="background-image: url(@photo.SharerProfilePic)"></div>
+                                <div class="aday_gosteren_isim">
+                                    <p class="aday_gos">Aday Gösteren </p>
+                                    <p class="aday_gos_isim">@photo.SharerName</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+}
+
+
+            </ul>
+        </div>
+
+
+        <p class="s_unlu_desc">
+            Adayını Facebook üzerinden seçerek yarışmaya katılabilirsin... <br /><br />
+
+            <a href="javascript:;" id="fbBtnLogin" class="s_unlu_aday_sec" data-ga="fb-aday-sec">FACEBOOK İLE BAĞLAN</a>
+
+        </p>
+    </div>
+</div>
+
+

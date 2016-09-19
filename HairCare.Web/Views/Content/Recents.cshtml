@@ -1,0 +1,38 @@
+﻿@model IEnumerable<HairCare.DB.GetRecentContents_Result>
+<div class="four_col_area">
+    <div class="content_inner">
+        <div id="four-columns" class="grid-container">
+            <ul class="rig columns-4">
+                <li>
+                    <img src="/images/recentsTitle.jpg" />
+                </li>
+
+                @foreach(var item in Model){
+                <li>
+                        <div class="thumbs_div">
+                            @if (item.ContentImage != null && item.ContentImage != String.Empty)
+                            {
+                                <img src="/images/content/@item.ContentImage" />
+                            }
+                            <a href="@PathHelper.ContentDetail(item.ContentId.Value, item.ContentTitle)" class="thumb_desc_area">
+                                
+                                <div class="thumb_container">
+                                    <div class="thumb_desc_title">
+                                        <p class="_desc_title">@item.ContentViewDate</p>
+                                    </div>
+                                    <div class="thumb_desc">
+
+                                        <p class="_desc_content">@LIB.StringHelper.Left(item.ContentTitle, 250, "...")</p>
+                                    </div>
+                                </div>
+
+                            </a>
+                        </div>
+                </li>
+                }
+
+            </ul>
+        </div>
+
+    </div>
+</div>

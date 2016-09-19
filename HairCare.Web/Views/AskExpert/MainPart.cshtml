@@ -1,0 +1,64 @@
+﻿<script>
+
+    $(function () {
+        initAskExpertSlider();
+    })
+
+    function initAskExpertSlider() {
+        var sliderUzman = new MasterSlider();
+        sliderUzman.control('bullets');
+        sliderUzman.setup('uzmanaSorSlide', {
+            width: 500,
+            height: 420,
+            space: 5,
+            layout: 'boxed',
+
+        });
+    }
+</script>
+
+<div class="uzmana_sor_area">
+    <div class="content_inner">
+        <div class="soru_div">
+            <div class="uzman_content">
+                <div class="uzman_left">
+                    <div class="uzman_pic_frame uzmanPic">
+                        <img src="/images/uzman_blank.png" class="uzman_img" />
+                    </div>
+                    <div class="uzman_desc">
+                        <h3 class="uzman_name">CHRISTOPHE ROBIN</h3>
+                        <p class="uzman_title">EKSPERT - L’OREAL PARIS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="uzman_right">
+                <h1 class="uzmana_sor_titile">UZMANA &nbsp; &nbsp; SOR</h1>
+                <div class="master-slider ms-skin-default" id="uzmanaSorSlide">
+                    <!-- new slide -->
+                    
+                    <div class="ms-slide">
+                        <div class="soru_content">
+                            <h2 class="soru_titile">SORU</h2>
+                            <p class="soru_txt">
+                                "Saçlarımın renginin canlılığını kaybetmemesi için ne yapmam gerekir?"
+                            </p>
+                            <p class="cevap_txt">Saç rengini uzun süre parlak tutmanın en önemli sırrı sağlıklı saçlar. Saçlar hasar gördüğünde, saç kütiküllerinde boşluklar oluşur...</p>
+                        </div>
+                    </div>
+
+                    <div class="ms-slide">
+                        <div class="soru_content">
+                            <h2 class="soru_titile">SORU</h2>
+                            <p class="soru_txt">"Saçlarım sürekli dökülüyor, bunun önüne nasıl geçebilirim?"</p>
+                            <p class="cevap_txt">Saçlarının incelmesinin önüne geçmek, doğru saç bakımı ile mümkün. Fön ve maşa uygulamaları arasında saçına nefes aldır. Isı ile saç şekillendirmeye ara verdiğin süre boyunca saçındaki iyileşmeyi...</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="sende_sor">
+                    <a class="tumunu_gorBt" href="/uzmana-sor"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="LorealHairCareModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="AdminUsers">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Username" Type="nvarchar" MaxLength="512" Nullable="false" />
+    <Property Name="Password" Type="nvarchar" MaxLength="512" Nullable="false" />
+    <Property Name="FirstName" Type="nvarchar" MaxLength="512" Nullable="false" />
+    <Property Name="LastName" Type="nvarchar" MaxLength="512" Nullable="false" />
+    <Property Name="LastLoginDate" Type="datetime" />
+    <Property Name="CreateDate" Type="datetime" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Categories">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ParentId" Type="int" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="1200" />
+    <Property Name="Image" Type="nvarchar" MaxLength="1024" />
+    <Property Name="Keywords" Type="nvarchar" MaxLength="500" />
+    <Property Name="UrlMapTitle" Type="nvarchar" MaxLength="512" />
+    <Property Name="ShowOrder" Type="int" Nullable="false" />
+    <Property Name="CreateDate" Type="smalldatetime" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ContentCategories">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CategoryId" Type="int" Nullable="false" />
+    <Property Name="ContentId" Type="int" Nullable="false" />
+    <Property Name="CreateDate" Type="smalldatetime" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ContentRelatedContents">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="RelatedContentId" Type="int" Nullable="false" />
+    <Property Name="ContentId" Type="int" Nullable="false" />
+    <Property Name="CreateDate" Type="smalldatetime" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Contents">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="Image" Type="nvarchar" MaxLength="500" />
+    <Property Name="Header" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Detail" Type="ntext" />
+    <Property Name="ViewCount" Type="int" Nullable="false" />
+    <Property Name="Stars" Type="int" />
+    <Property Name="Tags" Type="nvarchar" MaxLength="1000" />
+    <Property Name="ShowOrder" Type="int" />
+    <Property Name="ViewDate" Type="varchar" MaxLength="120" />
+    <Property Name="CreateDate" Type="datetime" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="IGPhotos">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IGUserId" Type="bigint" Nullable="false" />
+    <Property Name="IGNomineeId" Type="bigint" Nullable="false" />
+    <Property Name="CaptionText" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CommentCount" Type="int" Nullable="false" />
+    <Property Name="Created" Type="datetime" Nullable="false" />
+    <Property Name="Filter" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Link" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="LowResUrl" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="StandardResUrl" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="ThumbnailUrl" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="CreateDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="IGUsers">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="InstaId" Type="bigint" Nullable="false" />
+    <Property Name="FullName" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="Bio" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ProfilePicture" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Website" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="CreateDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="InstagramPhotos">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="InstaId" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CaptionText" Type="nvarchar(max)" />
+    <Property Name="CommentCount" Type="int" />
+    <Property Name="Created" Type="datetime" Nullable="false" />
+    <Property Name="LikeCount" Type="int" />
+    <Property Name="Link" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="Location" Type="nvarchar" MaxLength="250" />
+    <Property Name="LowResolution" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="StandartResolution" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="Thumbnail" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="UserId" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="CreateDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="RelatedContents">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" MaxLength="1024" Nullable="false" />
+    <Property Name="Detail" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Image" Type="nvarchar" MaxLength="1024" />
+    <Property Name="CreateDate" Type="smalldatetime" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FbId" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="FirstName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="LastName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Link" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="Gender" Type="nvarchar" MaxLength="6" />
+    <Property Name="Locale" Type="nvarchar" MaxLength="50" />
+    <Property Name="Birthday" Type="nvarchar" MaxLength="10" />
+    <Property Name="Email" Type="nvarchar" MaxLength="100" />
+    <Property Name="PictureUrl" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="CreateDate" Type="datetime" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+  </EntityType>
+  <Function Name="GetCategoryDetails" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CategoryId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="GetContentDetail" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ContentId" Type="int" Mode="In" />
+  </Function>
+  <EntityContainer Name="LorealHairCareModelStoreContainer">
+    <EntitySet Name="AdminUsers" EntityType="Self.AdminUsers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Categories" EntityType="Self.Categories" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ContentCategories" EntityType="Self.ContentCategories" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ContentRelatedContents" EntityType="Self.ContentRelatedContents" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Contents" EntityType="Self.Contents" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="IGPhotos" EntityType="Self.IGPhotos" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="IGUsers" EntityType="Self.IGUsers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="InstagramPhotos" EntityType="Self.InstagramPhotos" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RelatedContents" EntityType="Self.RelatedContents" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

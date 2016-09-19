@@ -1,0 +1,6 @@
+D:\Projects\Loreal Hair Care\WebProject\LIB\bin\Release\LIB.dll
+D:\Projects\Loreal Hair Care\WebProject\LIB\bin\Release\LIB.pdb
+D:\Projects\Loreal Hair Care\WebProject\LIB\bin\Release\Newtonsoft.Json.dll
+D:\Projects\Loreal Hair Care\WebProject\LIB\bin\Release\Newtonsoft.Json.xml
+D:\Projects\Loreal Hair Care\WebProject\LIB\obj\Release\LIB.dll
+D:\Projects\Loreal Hair Care\WebProject\LIB\obj\Release\LIB.pdb

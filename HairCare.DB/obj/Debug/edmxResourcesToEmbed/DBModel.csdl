@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="LorealHairCareModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="AdminUser">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Username" Type="String" MaxLength="512" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="512" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="FirstName" Type="String" MaxLength="512" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="LastName" Type="String" MaxLength="512" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="LastLoginDate" Type="DateTime" Precision="3" />
+    <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Category">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ParentId" Type="Int32" Nullable="false" />
+    <Property Name="Title" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="1200" FixedLength="false" Unicode="true" />
+    <Property Name="Image" Type="String" MaxLength="1024" FixedLength="false" Unicode="true" />
+    <Property Name="Keywords" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="UrlMapTitle" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+    <Property Name="ShowOrder" Type="Int32" Nullable="false" />
+    <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ContentCategory">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CategoryId" Type="Int32" Nullable="false" />
+    <Property Name="ContentId" Type="Int32" Nullable="false" />
+    <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ContentRelatedContent">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="RelatedContentId" Type="Int32" Nullable="false" />
+    <Property Name="ContentId" Type="Int32" Nullable="false" />
+    <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Content">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Image" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Header" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Detail" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ViewCount" Type="Int32" Nullable="false" />
+    <Property Name="Stars" Type="Int32" />
+    <Property Name="Tags" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="ShowOrder" Type="Int32" />
+    <Property Name="ViewDate" Type="String" MaxLength="120" FixedLength="false" Unicode="false" />
+    <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="IGPhoto">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IGUserId" Type="Int64" Nullable="false" />
+    <Property Name="IGNomineeId" Type="Int64" Nullable="false" />
+    <Property Name="CaptionText" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CommentCount" Type="Int32" Nullable="false" />
+    <Property Name="Created" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Filter" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Link" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="LowResUrl" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="StandardResUrl" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ThumbnailUrl" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+    <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="IGUser">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="InstaId" Type="Int64" Nullable="false" />
+    <Property Name="FullName" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Bio" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ProfilePicture" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Website" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+    <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="InstagramPhoto">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="InstaId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CaptionText" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CommentCount" Type="Int32" />
+    <Property Name="Created" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="LikeCount" Type="Int32" />
+    <Property Name="Link" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Location" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="LowResolution" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="StandartResolution" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Thumbnail" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="UserId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+    <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="RelatedContent">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Title" Type="String" MaxLength="1024" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Detail" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Image" Type="String" MaxLength="1024" FixedLength="false" Unicode="true" />
+    <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FbId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="FirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="LastName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Link" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Gender" Type="String" MaxLength="6" FixedLength="false" Unicode="true" />
+    <Property Name="Locale" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Birthday" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="PictureUrl" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="LorealHairCareEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="AdminUsers" EntityType="Self.AdminUser" />
+    <EntitySet Name="Categories" EntityType="Self.Category" />
+    <EntitySet Name="ContentCategories" EntityType="Self.ContentCategory" />
+    <EntitySet Name="ContentRelatedContents" EntityType="Self.ContentRelatedContent" />
+    <EntitySet Name="Contents" EntityType="Self.Content" />
+    <EntitySet Name="IGPhotos" EntityType="Self.IGPhoto" />
+    <EntitySet Name="IGUsers" EntityType="Self.IGUser" />
+    <EntitySet Name="InstagramPhotos" EntityType="Self.InstagramPhoto" />
+    <EntitySet Name="RelatedContents" EntityType="Self.RelatedContent" />
+    <EntitySet Name="Users" EntityType="Self.User" />
+    <FunctionImport Name="GetCategoryDetails" ReturnType="Collection(LorealHairCareModel.GetCategoryDetails_Result)">
+      <Parameter Name="CategoryId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="GetContentDetail" ReturnType="Collection(LorealHairCareModel.GetContentDetail_Result)">
+      <Parameter Name="ContentId" Mode="In" Type="Int32" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="GetCategoryDetails_Result">
+    <Property Type="Int32" Name="CategoryId" Nullable="false" />
+    <Property Type="Int32" Name="CategoryParentId" Nullable="false" />
+    <Property Type="String" Name="CategoryTitle" Nullable="false" MaxLength="500" />
+    <Property Type="String" Name="CategoryDescription" Nullable="true" MaxLength="1200" />
+    <Property Type="String" Name="CategoryImage" Nullable="true" MaxLength="1024" />
+    <Property Type="String" Name="CategoryKeywords" Nullable="true" MaxLength="500" />
+    <Property Type="Int32" Name="CategoryShowOrder" Nullable="false" />
+    <Property Type="DateTime" Name="CategoryCreateDate" Nullable="false" Precision="16" />
+    <Property Type="Int32" Name="ContentId" Nullable="false" />
+    <Property Type="String" Name="ContentTitle" Nullable="false" MaxLength="500" />
+    <Property Type="String" Name="ContentImage" Nullable="true" MaxLength="500" />
+    <Property Type="String" Name="ContentHeader" Nullable="false" />
+    <Property Type="Int32" Name="ContentStars" Nullable="true" />
+    <Property Type="String" Name="ContentTags" Nullable="true" MaxLength="1000" />
+    <Property Type="Int32" Name="ContentShowOrder" Nullable="true" />
+    <Property Type="String" Name="ContentViewDate" Nullable="true" MaxLength="120" />
+  </ComplexType>
+  <ComplexType Name="GetContentDetail_Result">
+    <Property Type="Int32" Name="CategoryId" Nullable="false" />
+    <Property Type="Int32" Name="CategoryParentId" Nullable="false" />
+    <Property Type="String" Name="CategoryTitle" Nullable="false" MaxLength="500" />
+    <Property Type="String" Name="CategoryDescription" Nullable="true" MaxLength="1200" />
+    <Property Type="String" Name="CategoryImage" Nullable="true" MaxLength="1024" />
+    <Property Type="String" Name="CategoryKeywords" Nullable="true" MaxLength="500" />
+    <Property Type="Int32" Name="CategoryShowOrder" Nullable="false" />
+    <Property Type="DateTime" Name="CategoryCreateDate" Nullable="false" Precision="16" />
+    <Property Type="Int32" Name="ContentId" Nullable="false" />
+    <Property Type="String" Name="ContentTitle" Nullable="false" MaxLength="500" />
+    <Property Type="String" Name="ContentImage" Nullable="true" MaxLength="500" />
+    <Property Type="String" Name="ContentHeader" Nullable="false" />
+    <Property Type="String" Name="Detail" Nullable="true" MaxLength="Max" />
+    <Property Type="Int32" Name="ContentStars" Nullable="true" />
+    <Property Type="String" Name="ContentTags" Nullable="true" MaxLength="1000" />
+    <Property Type="Int32" Name="ContentShowOrder" Nullable="true" />
+    <Property Type="String" Name="ContentViewDate" Nullable="true" MaxLength="120" />
+    <Property Type="String" Name="RelatedContentTitle" Nullable="true" MaxLength="1024" />
+    <Property Type="String" Name="RelatedContentDetail" Nullable="true" />
+    <Property Type="String" Name="RelatedContentTitle1" Nullable="true" MaxLength="1024" />
+  </ComplexType>
+</Schema>

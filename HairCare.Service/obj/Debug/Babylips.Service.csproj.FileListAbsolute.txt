@@ -1,0 +1,17 @@
+D:\Projects\Loreal Maybelline Babylips\Babylips.Service\bin\Debug\Babylips.Service.dll
+D:\Projects\Loreal Maybelline Babylips\Babylips.Service\bin\Debug\Babylips.Service.pdb
+D:\Projects\Loreal Maybelline Babylips\Babylips.Service\bin\Debug\Babylips.Com.dll
+D:\Projects\Loreal Maybelline Babylips\Babylips.Service\bin\Debug\Babylips.DB.dll
+D:\Projects\Loreal Maybelline Babylips\Babylips.Service\bin\Debug\EntityFramework.dll
+D:\Projects\Loreal Maybelline Babylips\Babylips.Service\bin\Debug\FbManager.dll
+D:\Projects\Loreal Maybelline Babylips\Babylips.Service\bin\Debug\LIB.dll
+D:\Projects\Loreal Maybelline Babylips\Babylips.Service\bin\Debug\Newtonsoft.Json.dll
+D:\Projects\Loreal Maybelline Babylips\Babylips.Service\bin\Debug\Babylips.Com.pdb
+D:\Projects\Loreal Maybelline Babylips\Babylips.Service\bin\Debug\Babylips.DB.pdb
+D:\Projects\Loreal Maybelline Babylips\Babylips.Service\bin\Debug\FbManager.pdb
+D:\Projects\Loreal Maybelline Babylips\Babylips.Service\bin\Debug\LIB.pdb
+D:\Projects\Loreal Maybelline Babylips\Babylips.Service\bin\Debug\EntityFramework.xml
+D:\Projects\Loreal Maybelline Babylips\Babylips.Service\bin\Debug\Newtonsoft.Json.xml
+D:\Projects\Loreal Maybelline Babylips\Babylips.Service\obj\Debug\Babylips.Service.csprojResolveAssemblyReference.cache
+D:\Projects\Loreal Maybelline Babylips\Babylips.Service\obj\Debug\Babylips.Service.dll
+D:\Projects\Loreal Maybelline Babylips\Babylips.Service\obj\Debug\Babylips.Service.pdb

@@ -1,0 +1,85 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FbManager", "FbManager\FbManager.csproj", "{DC935B2D-9876-423D-9F67-27D09369A402}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HairCare.Com", "HairCare.Com\HairCare.Com.csproj", "{317D4D37-1F0C-493B-BFB9-433C65F9E240}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HairCare.DB", "HairCare.DB\HairCare.DB.csproj", "{140F1EB0-56A2-4479-905D-8CED2C725D0E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HairCare.Service", "HairCare.Service\HairCare.Service.csproj", "{8FDF614F-07A7-4469-992F-9AB84115C9B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HairCare.Web", "HairCare.Web\HairCare.Web.csproj", "{4DE7676B-BAA7-498B-B968-2531054A176A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LIB", "LIB\LIB.csproj", "{B58853B4-B9E4-403D-B4BF-0A6068E2A49F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestConsole", "TestConsole\TestConsole.csproj", "{52D93361-7C33-4BEE-8855-1E61B1A51100}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 8
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://wd1.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = FbManager\\FbManager.csproj
+		SccProjectName1 = FbManager
+		SccLocalPath1 = FbManager
+		SccProjectUniqueName2 = HairCare.Com\\HairCare.Com.csproj
+		SccProjectName2 = HairCare.Com
+		SccLocalPath2 = HairCare.Com
+		SccProjectUniqueName3 = HairCare.DB\\HairCare.DB.csproj
+		SccProjectName3 = HairCare.DB
+		SccLocalPath3 = HairCare.DB
+		SccProjectUniqueName4 = HairCare.Service\\HairCare.Service.csproj
+		SccProjectName4 = HairCare.Service
+		SccLocalPath4 = HairCare.Service
+		SccProjectUniqueName5 = HairCare.Web\\HairCare.Web.csproj
+		SccProjectName5 = HairCare.Web
+		SccLocalPath5 = HairCare.Web
+		SccProjectUniqueName6 = LIB\\LIB.csproj
+		SccProjectName6 = LIB
+		SccLocalPath6 = LIB
+		SccProjectUniqueName7 = TestConsole\\TestConsole.csproj
+		SccProjectName7 = TestConsole
+		SccLocalPath7 = TestConsole
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DC935B2D-9876-423D-9F67-27D09369A402}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC935B2D-9876-423D-9F67-27D09369A402}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC935B2D-9876-423D-9F67-27D09369A402}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC935B2D-9876-423D-9F67-27D09369A402}.Release|Any CPU.Build.0 = Release|Any CPU
+		{317D4D37-1F0C-493B-BFB9-433C65F9E240}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{317D4D37-1F0C-493B-BFB9-433C65F9E240}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{317D4D37-1F0C-493B-BFB9-433C65F9E240}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{317D4D37-1F0C-493B-BFB9-433C65F9E240}.Release|Any CPU.Build.0 = Release|Any CPU
+		{140F1EB0-56A2-4479-905D-8CED2C725D0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{140F1EB0-56A2-4479-905D-8CED2C725D0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{140F1EB0-56A2-4479-905D-8CED2C725D0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{140F1EB0-56A2-4479-905D-8CED2C725D0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FDF614F-07A7-4469-992F-9AB84115C9B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FDF614F-07A7-4469-992F-9AB84115C9B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FDF614F-07A7-4469-992F-9AB84115C9B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FDF614F-07A7-4469-992F-9AB84115C9B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DE7676B-BAA7-498B-B968-2531054A176A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DE7676B-BAA7-498B-B968-2531054A176A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DE7676B-BAA7-498B-B968-2531054A176A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DE7676B-BAA7-498B-B968-2531054A176A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B58853B4-B9E4-403D-B4BF-0A6068E2A49F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B58853B4-B9E4-403D-B4BF-0A6068E2A49F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B58853B4-B9E4-403D-B4BF-0A6068E2A49F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B58853B4-B9E4-403D-B4BF-0A6068E2A49F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52D93361-7C33-4BEE-8855-1E61B1A51100}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52D93361-7C33-4BEE-8855-1E61B1A51100}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52D93361-7C33-4BEE-8855-1E61B1A51100}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52D93361-7C33-4BEE-8855-1E61B1A51100}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

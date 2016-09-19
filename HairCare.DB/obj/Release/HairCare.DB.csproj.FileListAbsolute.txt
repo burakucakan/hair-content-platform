@@ -1,0 +1,9 @@
+D:\Projects\Loreal Hair Care\WebProject\HairCare.DB\bin\Release\HairCare.DB.dll.config
+D:\Projects\Loreal Hair Care\WebProject\HairCare.DB\bin\Release\HairCare.DB.dll
+D:\Projects\Loreal Hair Care\WebProject\HairCare.DB\bin\Release\HairCare.DB.pdb
+D:\Projects\Loreal Hair Care\WebProject\HairCare.DB\bin\Release\EntityFramework.dll
+D:\Projects\Loreal Hair Care\WebProject\HairCare.DB\bin\Release\EntityFramework.SqlServer.dll
+D:\Projects\Loreal Hair Care\WebProject\HairCare.DB\bin\Release\EntityFramework.xml
+D:\Projects\Loreal Hair Care\WebProject\HairCare.DB\bin\Release\EntityFramework.SqlServer.xml
+D:\Projects\Loreal Hair Care\WebProject\HairCare.DB\obj\Release\HairCare.DB.dll
+D:\Projects\Loreal Hair Care\WebProject\HairCare.DB\obj\Release\HairCare.DB.pdb

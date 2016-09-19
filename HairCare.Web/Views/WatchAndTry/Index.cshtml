@@ -1,0 +1,78 @@
+﻿@section scripts {
+<script>
+
+    $(function () {
+
+        loadPopularContent();
+
+    })
+
+    function loadPopularContent() {
+        var _popularPath = '/Content/Popular';
+        $('.populer_area').load(_popularPath);
+    }
+
+</script>    
+}
+
+<div class="subpage_area">
+    <div class="content_inner">
+        <h1 class="page_title">İZLE VE UYGULA</h1>
+
+        <center><p class="paragraph">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p></center>
+
+        <div class="izleUygula">
+            <ul class="rig columns-3">
+                <li>
+                    <div class="videoThumb"> <a class="fancybox" data-type="iframe" href="http://www.youtube.com/embed/7-WmDFsEl80?autoplay=0" title=""> <img src="/images/videos/01.jpg" /> <span class="play"></span></a> </div>
+                    <div class="videoTitle">
+                        <h2>Lorem Ipsum</h2>
+                        <p>Lorem ipsum dolor sit amet</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="videoThumb"> <a class="fancybox" data-type="iframe" href="http://www.youtube.com/embed/7-WmDFsEl80?autoplay=0" title=""> <img src="/images/videos/01.jpg" /> <span class="play"></span></a> </div>
+                    <div class="videoTitle">
+                        <h2>Lorem Ipsum</h2>
+                        <p>Lorem ipsum dolor sit amet</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="videoThumb"> <a class="fancybox" data-type="iframe" href="http://www.youtube.com/embed/7-WmDFsEl80?autoplay=0" title=""> <img src="/images/videos/01.jpg" /> <span class="play"></span></a> </div>
+                    <div class="videoTitle">
+                        <h2>Lorem Ipsum</h2>
+                        <p>Lorem ipsum dolor sit amet</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="videoThumb"> <a class="fancybox" data-type="iframe" href="http://www.youtube.com/embed/7-WmDFsEl80?autoplay=0" title=""> <img src="/images/videos/01.jpg" /> <span class="play"></span></a> </div>
+                    <div class="videoTitle">
+                        <h2>Lorem Ipsum</h2>
+                        <p>Lorem ipsum dolor sit amet</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="videoThumb"> <a class="fancybox" data-type="iframe" href="http://www.youtube.com/embed/7-WmDFsEl80?autoplay=0" title=""> <img src="/images/videos/01.jpg" /> <span class="play"></span></a> </div>
+                    <div class="videoTitle">
+                        <h2>Lorem Ipsum</h2>
+                        <p>Lorem ipsum dolor sit amet</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="videoThumb"> <a class="fancybox" data-type="iframe" href="http://www.youtube.com/embed/7-WmDFsEl80?autoplay=0" title=""> <img src="/images/videos/01.jpg" /> <span class="play"></span></a> </div>
+                    <div class="videoTitle">
+                        <h2>Lorem Ipsum</h2>
+                        <p>Lorem ipsum dolor sit amet</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="populer_area"></div>
+
+
+    @{ Html.RenderAction("MainPart", "AskExpert"); }
+
+</div>

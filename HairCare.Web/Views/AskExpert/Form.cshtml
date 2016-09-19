@@ -1,0 +1,77 @@
+﻿@model HairCare.DB.AskExpert
+
+<div class="subpage_area">
+
+    <div class="content_inner">
+        <div class="uzmanBannerWrapper">
+            <div class="uzmanLeftArea">
+                <div class="uzmanImgFrame">
+                    <div class="uzmanImgAndTitle">
+                        <div class="uzmanImg">
+                            <img src="/images/uzman_blank.png" alt="" />
+                        </div>
+                        <div class="_uzmanTitle">
+                            <h2>CRISTOPHE ROBIN</h2>
+                            <p>EKPERT - L'OREAL PARIS</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="uzmanRightArea">
+                <div class="uzmanSoruContent">
+                    <h1 class="uzmana_sor_titile">UZMANA SOR</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit, tellus sed pellentesque iaculis, ipsum nisl auctor nibh.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+
+    @if (!ViewBag.IsSent) { 
+
+
+    <div class="uzmanaSorForm">
+
+        <div class="uzmana-soru-sor-header">
+
+            <p class="paragraph">Aşağıdaki formu doldurarak uzmanımıza dilediğin soruyu sorabilirsin!</p>
+
+        </div>
+
+    @using (Ajax.BeginForm(null, null, new AjaxOptions { LoadingElementId = "imgLoading" }, new { @id = "AskExpertForm" }))
+    {
+
+        @Html.TextBoxFor(model => model.SenderFullName, new { placeholder = "Adın Soyadın", maxlength = 100 }) @Html.ValidationMessageFor(model => model.SenderFullName)
+        
+        @Html.TextBoxFor(model => model.SenderEmail, new { placeholder = "E-posta Adresin", maxlength = 100 })  @Html.ValidationMessageFor(model => model.SenderEmail)
+        @Html.TextBoxFor(model => model.SenderPhone, new { placeholder = "Telefonun", maxlength = 15 })         <span></span>
+        @Html.TextAreaFor(model => model.Question, new {placeholder="Sormak istediğin soru", maxlength=1000 }) @Html.ValidationMessageFor(model => model.Question)
+
+
+        <input type="submit" value="" class="sendeSor2Bt">
+
+        <img id="imgLoading" src="/images/loading.gif" style="display: none;" />
+    }
+
+        <script src="/scripts/jquery.validate.min.js"></script>
+        <script src="/scripts/jquery.validate.unobtrusive.min.js"></script>
+
+  
+  </div>
+
+    }
+
+    else {
+        
+    <div id="formSuccess" class="askExpertFormSuccess">
+        <h2>Teşekkür ederiz!</h2>
+        <p>Sorunuz bize ulaşmıştır. Uzmanımız cevapladıktan sonrada sitede yer alacaktır.</p>
+
+        <a class="tumunu_gorBt" href="/uzmana-sor"></a>
+    </div>
+        
+    }
+        
+        
+</div>
+

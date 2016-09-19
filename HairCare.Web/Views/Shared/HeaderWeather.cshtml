@@ -1,0 +1,73 @@
+﻿<script>
+
+    $(function () {
+        getClientCoordinates();
+    });
+
+    function getClientCoordinates() {
+        if (navigator.geolocation)
+            navigator.geolocation.getCurrentPosition(getCityName, setLocationAsIstanbul);
+        else
+            setLocationAsIstanbul();
+    }
+
+    function setLocationAsIstanbul() {
+        var position = { coords: { latitude: 41, longitude: 29 } };
+        getCityName(position);
+    }
+
+    function getCityName(position) {
+        var latitude = position.coords.latitude;
+        var longitude = position.coords.longitude;
+        $.ajax({
+            url: 'http://maps.googleapis.com/maps/api/geocode/json?latlng=' + latitude + ',' + longitude + '&sensor=true',
+            async: true,
+            success: function (data) {
+                $.each(data.results[0].address_components, function (index, value) {
+                    if (value.types[0] == 'locality') {
+                        getCityWeather(value.long_name);
+                    }
+                });
+            }
+        });
+    }
+
+    function getCityWeather(City) {
+        $.ajax({
+            data: { city: City },
+            url: '/Weather/GetCityWeather?rnd=' + Math.random(),
+            dataType: 'json',
+            type: 'POST',
+            async: true,
+            success: function (resp) {
+                $('#imgWeatherCode').attr('src', '/images/weather/' + resp.code + '.png');
+                $('.weather_area').fadeIn();
+                $('.weather_desc .w_rapor').text(City + ' ' + resp.condition);
+                $('.weather_degrees .degrees').text(resp.temperature + '°');
+            }
+        });
+    }
+
+</script>
+
+
+<div class="weather_area">
+    <div class="weather_content">
+        <div class="weather_desc">
+            <p class="w_rapor"></p>
+
+            <p class="w_loreal_desc"><a href="http://elseve.lorealparis.com.tr" data-ga="elseve-web-site-by-weather" target="_blank">Elseve</a> ile saç bakımını yapmayı unutma!</p>
+
+        </div>
+        <div class="weather_degrees">
+            <p class="degrees"></p>
+        </div>
+        <div class="weather_img_area_unit_wrapper">
+            <div class="weather_img_area">
+
+                <img id="imgWeatherCode" src="" class="w_img" />
+
+            </div>
+        </div>
+    </div>
+</div>

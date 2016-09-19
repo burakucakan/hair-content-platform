@@ -1,0 +1,9 @@
+D:\Projects\Loreal Maybelline Babylips\TestConsole\bin\Debug\TestConsole.dll
+D:\Projects\Loreal Maybelline Babylips\TestConsole\bin\Debug\TestConsole.pdb
+D:\Projects\Loreal Maybelline Babylips\TestConsole\obj\Debug\TestConsole.dll
+D:\Projects\Loreal Maybelline Babylips\TestConsole\obj\Debug\TestConsole.pdb
+D:\Projects\Loreal Hair Care\WebProject\TestConsole\bin\Debug\TestConsole.dll
+D:\Projects\Loreal Hair Care\WebProject\TestConsole\bin\Debug\TestConsole.pdb
+D:\Projects\Loreal Hair Care\WebProject\TestConsole\obj\Debug\TestConsole.csprojResolveAssemblyReference.cache
+D:\Projects\Loreal Hair Care\WebProject\TestConsole\obj\Debug\TestConsole.dll
+D:\Projects\Loreal Hair Care\WebProject\TestConsole\obj\Debug\TestConsole.pdb

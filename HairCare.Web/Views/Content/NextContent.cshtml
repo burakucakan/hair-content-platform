@@ -1,0 +1,30 @@
+﻿@model IEnumerable<HairCare.DB.Content>
+
+@if (Model != null)
+{
+    <div class="row_6">
+        <h2>Sonraki Haber</h2>
+    </div>
+
+    foreach (var item in Model.ToList())
+    {    
+        <div class="thumbs_div">
+            @if (item.Image != null && item.Image != String.Empty){
+                <img src="/images/content/@item.Image" />
+            }
+            <a href="@PathHelper.ContentDetail(item.Id, item.Title)" class="thumb_desc_area">
+                                
+                <div class="thumb_container">
+                    <div class="thumb_desc_title">
+                        <p class="_desc_title">@item.ViewDate</p>
+                    </div>
+                    <div class="thumb_desc">
+
+                        <p class="_desc_content">@LIB.StringHelper.Left(item.Title, 250, "...")</p>
+                    </div>
+                </div>
+
+            </a>
+        </div>    
+    }
+}

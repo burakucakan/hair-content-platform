@@ -1,0 +1,48 @@
+﻿@model IEnumerable<HairCare.DB.GetCombinedPhotoList_Result>
+
+<div class="saclariyla_gucluler_area">
+
+    <div class="content_inner">
+
+        <h1 class="page_title">SAÇLARIYLA GÜÇLÜLER</h1>
+        <p class="gucluTitle2">Onlar saçlarıyla ünlü, çünkü saçları güçlü…</p>
+
+        <div class="adaylar">
+            <ul class="rig columns-3">
+                @{int index = 1; string cssClass = "";}
+                @foreach (var photo in Model)
+                {
+                    //if (index % 3 == 1) { cssClass = "mtop"; } else { cssClass = ""; }
+                    <li>
+                        <div class="adaybox">
+                            <div class="aday_isim"><p>@photo.NomineeName<p></div>
+                            <div class="adayImg"> <img src="@photo.PictureUrl" width="375" height="375" onerror="$(this).parent().parent().parent().remove();" /> </div>
+                            <div class="aday_gosteren">
+                                <div class="aday_gosteren_img">
+                                    <div class="circle" style="background-image: url(@photo.SharerProfilePic)"></div>
+                                    <div class="aday_gosteren_isim">
+                                        <p class="aday_gos">Aday Gösteren </p>
+                                        <p class="aday_gos_isim">@photo.SharerName</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    index++;
+                }
+
+            </ul>
+        </div>
+
+        <div class="bt_div">
+            <a class="tumunu_gorBt" href="/saclariyla-gucluler"></a>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
